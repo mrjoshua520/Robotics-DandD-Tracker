@@ -254,6 +254,8 @@ void Battle_Tracker()
 	int canBattle;
 
 	Battle_Track battle;
+	Players player;
+	Monsters monster;
 
 	canBattle = battle.Can_Battle(); //Returns 0 if can 1 if not player info or 2 if no monster info
 
@@ -273,9 +275,39 @@ void Battle_Tracker()
 	}
 	else
 	{
+		string Input;
+		bool BadInput = true;
+
 		system("cls");
-		cout << "Golden." << endl << endl;
-		system("pause");
+		cout << "Did they take a long rest? " << endl;
+		cout << "Input: ";
+		cin >> Input;
+
+		while (BadInput)
+		{
+			if (Input == "y" || Input == "Y")
+			{
+				BadInput = false;
+				player.Set_Current_HP("YES");
+				monster.Set_Current_HP();
+			}
+			else if (Input == "n" || Input == "N")
+			{
+				BadInput = false;
+				player.Set_Current_HP("NO");
+				monster.Set_Current_HP();
+			}
+			else
+			{
+				BadInput = true;
+				system("cls");
+				cout << "BadInput Try Again." << endl;
+				system("pause");
+			}
+		}
+
+		//Rest of battle stuff here
+
 	}
 }
 //================================================================

@@ -714,3 +714,11 @@ void Monsters::View_Monsters()
 	}
 	inputFileMon.close();
 }
+
+void Monsters::Set_Current_HP()
+{
+	for (Monsters mon : monster)
+	{
+		mon.currentHealth = mon.totalHealth;
+	}
+}

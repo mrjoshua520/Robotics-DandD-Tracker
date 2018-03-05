@@ -1382,3 +1382,21 @@ void Players::Add_Character()
 	}
 	outputFile.close();
 }
+
+void Players::Set_Current_HP(string longRest)
+{
+	if (longRest == "YES")
+	{
+		for (Players play : player)
+		{
+			play.currentHealth = play.totalHealth;
+		}
+	}
+	else
+	{
+		for (Players play : player)
+		{
+			play.currentHealth = play.currentHealth;
+		}
+	}
+}

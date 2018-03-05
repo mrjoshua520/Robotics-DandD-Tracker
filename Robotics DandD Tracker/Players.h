@@ -55,5 +55,6 @@ public:
 	void Level_Up_Characters();
 	void Delete_Character();
 	void Add_Character();
+	void Set_Current_HP(string);
 };
 

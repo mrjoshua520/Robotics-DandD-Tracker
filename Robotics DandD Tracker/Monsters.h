@@ -52,5 +52,6 @@ public:
 	void View_Monsters();
 	void Delete_Monster();
 	void Add_Monster();
+	void Set_Current_HP();
 };
 
