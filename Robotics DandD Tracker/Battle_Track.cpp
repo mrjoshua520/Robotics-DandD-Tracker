@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "Battle_Track.h"
 
-
 ifstream inputChar;
 ifstream inputMon;
 
