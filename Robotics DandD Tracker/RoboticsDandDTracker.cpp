@@ -307,7 +307,13 @@ void Battle_Tracker()
 		}
 
 		//Rest of battle stuff here
-
+		//needs new array/vector in here that will get the data from player and monster class.
+		//just inport all player data as is
+		//ask how many monsters will be fighting then each time ask which monster.
+		//Adds total number of monsters to total number of players. That is the array size.
+		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order. Use dynam array.
+		//at this point with all this I should be able to make an initiative order from highest to lowest with all the data needed.
+		//After this will be the actual battle stuff using the newly made vectoir
 	}
 }
 //================================================================
