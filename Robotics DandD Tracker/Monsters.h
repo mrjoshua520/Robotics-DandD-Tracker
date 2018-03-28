@@ -18,7 +18,6 @@ private:
 	string fileName = "Monsters.txt";
 	string type;
 	string size;
-	string monName;
 	string Alignment;
 	int challengeRating;
 	int strScore;
@@ -33,20 +32,23 @@ private:
 	int intMod;
 	int wisMod;
 	int chaMod;
-	int armorClass;
-	int speed;
-	int initiative;
-	int totalHealth;
-	int currentHealth;
-	int passivePerception;
 
-	vector<Monsters> monster;
 	string name;
 	string val;
 	int comma;
 public:
 	Monsters();
 	~Monsters();
+
+	vector<Monsters> monster;
+
+	string monName;
+	int totalHealth;
+	int currentHealth;
+	int initiative;
+	int armorClass;
+	int speed;
+	int passivePerception;
 
 	void Read_Monster_File();
 	void View_Monsters();

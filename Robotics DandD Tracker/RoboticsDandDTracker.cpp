@@ -256,6 +256,7 @@ void Battle_Tracker()
 	Battle_Track battle;
 	Players player;
 	Monsters monster;
+	int i = 0;
 
 	canBattle = battle.Can_Battle(); //Returns 0 if can 1 if not player info or 2 if no monster info
 
@@ -305,10 +306,24 @@ void Battle_Tracker()
 				system("pause");
 			}
 		}
+		
+		vector<Battle_Track> battleVect;
 
-		//Rest of battle stuff here
-		//needs new array/vector in here that will get the data from player and monster class.
-		//just inport all player data as is
+		for (Players play : player.player)
+		{
+			battleVect.push_back(Battle_Track());
+
+			battleVect[i].InitStats.Name = play.charName;
+			battleVect[i].InitStats.Armor_Class = play.armorClass;
+			battleVect[i].InitStats.Total_Health = play.totalHealth;
+			battleVect[i].InitStats.Current_Health = play.currentHealth;
+			battleVect[i].InitStats.Speed = play.speed;
+			battleVect[i].InitStats.Passive_Perception = play.passivePerception;
+			battleVect[i].InitStats.Initiative = play.initiative;
+
+			i++;
+		}
+
 		//ask how many monsters will be fighting then each time ask which monster.
 		//Adds total number of monsters to total number of players. That is the array size.
 		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order. Use dynam array.

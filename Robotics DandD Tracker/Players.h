@@ -18,7 +18,6 @@ private:
 	string fileName = "Characters.txt";
 	string Class;
 	string race;
-	string charName;
 	string playerName;
 	string Alignment;
 	int level;
@@ -35,20 +34,23 @@ private:
 	int intMod;
 	int wisMod;
 	int chaMod;
-	int armorClass;
-	int speed;
-	int initiative;
-	int totalHealth;
-	int currentHealth;
-	int passivePerception;
 
-	vector<Players> player;
 	string name;
 	string val;
 	int comma;
 public:
 	Players();
 	~Players();
+
+	vector<Players> player;
+
+	string charName;
+	int totalHealth;
+	int currentHealth;
+	int initiative;
+	int armorClass;
+	int speed;
+	int passivePerception;
 
 	void Read_Character_File();
 	void View_Characters();
