@@ -9,6 +9,7 @@
 #include <sstream>
 #include <vector>
 #include <stdio.h>
+#include "DandD.h"
 
 using namespace std;
 
@@ -53,10 +54,11 @@ public:
 	int passivePerception;
 
 	void Read_Character_File();
+	int Read_Character_File_Battle();
+	void Store_Battle();
 	void View_Characters();
 	void Level_Up_Characters();
 	void Delete_Character();
 	void Add_Character();
-	void Set_Current_HP(string);
 };
 

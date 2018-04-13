@@ -9,6 +9,7 @@
 #include <sstream>
 #include <vector>
 #include <stdio.h>
+#include "DandD.h"
 
 using namespace std;
 
@@ -41,6 +42,7 @@ public:
 	~Monsters();
 
 	vector<Monsters> monster;
+	vector<Monsters> tempMon;
 
 	string monName;
 	int totalHealth;
@@ -51,9 +53,10 @@ public:
 	int passivePerception;
 
 	void Read_Monster_File();
+	void Read_Monster_File_Battle();
+	void Set_Battle_Vect(int);
 	void View_Monsters();
 	void Delete_Monster();
 	void Add_Monster();
-	void Set_Current_HP();
 };
 

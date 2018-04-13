@@ -20,6 +20,7 @@
     <Text Include="temp.txt" />
     <Text Include="Monsters.txt" />
     <Text Include="tempMon.txt" />
+    <Text Include="Battle.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

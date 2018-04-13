@@ -40,3 +40,5 @@ int Battle_Track::Can_Battle()
 	inputChar.close();
 	inputMon.close();
 }
+
+

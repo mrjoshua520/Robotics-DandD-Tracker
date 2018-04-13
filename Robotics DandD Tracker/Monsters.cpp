@@ -714,11 +714,184 @@ void Monsters::View_Monsters()
 	}
 	inputFileMon.close();
 }
-
-void Monsters::Set_Current_HP()
+void Monsters::Set_Battle_Vect(int num)
 {
-	for (Monsters mon : monster)
+	int input;
+	string Input;
+	int count = 0;
+	Battle_Track battle;
+	int next = num;
+	int i = 0;
+
+	system("cls");
+
+	cout << "How many monsters are fighting? ";
+	cin >> input;
+
+	for (int j = 0; j < input; j++)
 	{
-		mon.currentHealth = mon.totalHealth;
+		cout << "What monster are you adding to the fight?" << endl << endl;
+		cout << endl << "=====CURRENT Monsters======" << endl;
+
+		for (Monsters mon : tempMon)
+		{
+			cout << "Monster Name: " << mon.monName << "       Type of monster: " << mon.type << endl;
+		}
+
+		cout << "Choice: ";
+		cin >> Input;
+
+		for (Monsters mon : tempMon)
+		{
+			count++;
+		}
+
+		for (Monsters mon : tempMon)
+		{
+			if (mon.monName == Input)
+			{
+				break;
+			}
+			else
+			{
+				i++;
+			}
+		}
+
+		if (count == i)
+		{
+			system("cls");
+			cout << "There is no monster with the name " << Input << "." << endl;
+			system("pause");
+		}
+		else
+		{
+			while (true)
+			{
+				//put in txt file
+
+				i = 0;
+				count = 0;
+				break;
+			}
+		}
 	}
+}
+void Monsters::Read_Monster_File_Battle()
+{
+	ifstream inputFileMon;
+	Battle_Track battle;
+	int temps;
+	string temp;
+
+	inputFileMon.open(fileName);
+
+	tempMon.clear();
+
+	if (inputFileMon)
+	{
+		if (inputFileMon.peek() != std::ifstream::traits_type::eof())
+		{
+			for (int count = 0; getline(inputFileMon, name); count++)
+			{
+				tempMon.push_back(Monsters());
+
+				comma = name.find(',');
+				tempMon[count].monName = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].armorClass = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].speed = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].initiative = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].totalHealth = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].passivePerception = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].challengeRating = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+			}
+		}
+		else
+		{
+			system("cls");
+			cout << "The monster text file is empty. Please Add a monster." << endl;
+			system("pause");
+			Add_Monster();
+		}
+	}
+	inputFileMon.close();
 }

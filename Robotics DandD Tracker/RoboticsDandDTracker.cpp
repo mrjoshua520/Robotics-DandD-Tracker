@@ -252,11 +252,15 @@ void Random_Person()
 void Battle_Tracker()
 {
 	int canBattle;
+	Players play;
+	Monsters mon;
+	int num = 0;
 
 	Battle_Track battle;
-	Players player;
-	Monsters monster;
 	int i = 0;
+	int j = 0;
+	int input;
+	int count = 0;
 
 	canBattle = battle.Can_Battle(); //Returns 0 if can 1 if not player info or 2 if no monster info
 
@@ -276,56 +280,16 @@ void Battle_Tracker()
 	}
 	else
 	{
-		string Input;
-		bool BadInput = true;
+		num = play.Read_Character_File_Battle();
 
-		system("cls");
-		cout << "Did they take a long rest? " << endl;
-		cout << "Input: ";
-		cin >> Input;
+		play.Store_Battle();
 
-		while (BadInput)
-		{
-			if (Input == "y" || Input == "Y")
-			{
-				BadInput = false;
-				player.Set_Current_HP("YES");
-				monster.Set_Current_HP();
-			}
-			else if (Input == "n" || Input == "N")
-			{
-				BadInput = false;
-				player.Set_Current_HP("NO");
-				monster.Set_Current_HP();
-			}
-			else
-			{
-				BadInput = true;
-				system("cls");
-				cout << "BadInput Try Again." << endl;
-				system("pause");
-			}
-		}
-		
-		vector<Battle_Track> battleVect;
+		mon.Read_Monster_File_Battle();
 
-		for (Players play : player.player)
-		{
-			battleVect.push_back(Battle_Track());
+		mon.Set_Battle_Vect(num);
 
-			battleVect[i].InitStats.Name = play.charName;
-			battleVect[i].InitStats.Armor_Class = play.armorClass;
-			battleVect[i].InitStats.Total_Health = play.totalHealth;
-			battleVect[i].InitStats.Current_Health = play.currentHealth;
-			battleVect[i].InitStats.Speed = play.speed;
-			battleVect[i].InitStats.Passive_Perception = play.passivePerception;
-			battleVect[i].InitStats.Initiative = play.initiative;
-
-			i++;
-		}
-
-		//ask how many monsters will be fighting then each time ask which monster.
-		//Adds total number of monsters to total number of players. That is the array size.
+		//Input data to text file
+		//then take text file and in battle_track input that into a vector.
 		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order. Use dynam array.
 		//at this point with all this I should be able to make an initiative order from highest to lowest with all the data needed.
 		//After this will be the actual battle stuff using the newly made vectoir

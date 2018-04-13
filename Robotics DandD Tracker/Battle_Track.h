@@ -19,15 +19,16 @@ private:
 		int Speed;
 		int Armor_Class;
 		int Passive_Perception;
+		int Challenge_Rating;
 	};
 
 public:
 	Battle_Track();
 	~Battle_Track();
 
+	vector<Battle_Track> battleVect;
+
 	Batttle_Stats InitStats;
 	int Can_Battle();
-	int what_Players();
-	int what_Monsters();
 };
 

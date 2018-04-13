@@ -5,6 +5,7 @@
 ifstream inputFile;
 ofstream outputFile;
 ofstream temp;
+Battle_Track battle;
 
 Players::Players()
 {
@@ -1382,21 +1383,159 @@ void Players::Add_Character()
 	}
 	outputFile.close();
 }
-
-void Players::Set_Current_HP(string longRest)
+int Players::Read_Character_File_Battle()
 {
-	if (longRest == "YES")
+	string temp;
+	int temps;
+	ifstream inputFile;
+	int num = 0;
+	int HP;
+
+	inputFile.open(fileName);
+
+	battle.battleVect.clear();
+
+	if (inputFile)
 	{
-		for (Players play : player)
+		if (inputFile.peek() != std::ifstream::traits_type::eof())
 		{
-			play.currentHealth = play.totalHealth;
+			for (int count = 0; getline(inputFile, name); count++)
+			{
+				battle.battleVect.push_back(Battle_Track());
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Name = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temp = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Armor_Class = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Speed = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Initiative = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Total_Health = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				battle.battleVect[count].InitStats.Passive_Perception = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				temps = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				battle.battleVect[count].InitStats.Challenge_Rating = 0;
+
+				cout << "What is player " << count + 1 << "'s current HP? ";
+				cin >> HP;
+
+				battle.battleVect[count].InitStats.Current_Health = HP;
+
+				num++;
+			}
+		}
+		else
+		{
+			system("cls");
+			cout << "The character text file is empty. Please Add a character." << endl;
+			system("pause");
+			Add_Character();
 		}
 	}
-	else
+	inputFile.close();
+
+	return num;
+}
+void Players::Store_Battle()
+{
+	ofstream output;
+
+	output.open("Battle.txt", ofstream::app);
+
+	for (Battle_Track batt : battle.battleVect)
 	{
-		for (Players play : player)
-		{
-			play.currentHealth = play.currentHealth;
-		}
+		output << batt.InitStats.Name << ",";
+		output << batt.InitStats.Armor_Class << ",";
+		output << batt.InitStats.Speed << ",";
+		output << batt.InitStats.Initiative << ",";
+		output << batt.InitStats.Passive_Perception << ",";
+		output << batt.InitStats.Total_Health << ",";
+		output << batt.InitStats.Current_Health << ",";
+		output << batt.InitStats.Challenge_Rating << endl;
 	}
 }

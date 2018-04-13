@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="Battle.txt" />
     <Text Include="Characters.txt" />
     <Text Include="Monsters.txt" />
     <Text Include="ReadMe.txt" />
