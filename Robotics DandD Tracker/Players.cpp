@@ -1501,7 +1501,7 @@ int Players::Read_Character_File_Battle()
 
 				battle.battleVect[count].InitStats.Challenge_Rating = 0;
 
-				cout << "What is player " << count + 1 << "'s current HP? ";
+				cout << "What is " << battle.battleVect[count].InitStats.Name << "'s current HP? ";
 				cin >> HP;
 
 				battle.battleVect[count].InitStats.Current_Health = HP;

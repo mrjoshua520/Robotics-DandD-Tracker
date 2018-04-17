@@ -288,10 +288,11 @@ void Battle_Tracker()
 
 		mon.Set_Battle_Vect(num);
 
-		//Input data to text file
-		//then take text file and in battle_track input that into a vector.
-		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order. Use dynam array.
-		//at this point with all this I should be able to make an initiative order from highest to lowest with all the data needed.
+		battle.Vect_SetUp();
+
+		battle.Test();
+
+		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order.
 		//After this will be the actual battle stuff using the newly made vectoir
 	}
 }

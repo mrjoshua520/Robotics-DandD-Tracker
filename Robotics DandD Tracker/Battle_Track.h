@@ -9,6 +9,8 @@ class Battle_Track
 private:
 	string charFile = "Characters.txt";
 	string monFile = "Monsters.txt";
+	int comma;
+
 
 	struct Batttle_Stats
 	{
@@ -30,5 +32,7 @@ public:
 
 	Batttle_Stats InitStats;
 	int Can_Battle();
+	void Vect_SetUp();
+	void Vect_Ini_Sort();
 };
 

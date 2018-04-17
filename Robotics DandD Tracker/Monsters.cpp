@@ -722,6 +722,9 @@ void Monsters::Set_Battle_Vect(int num)
 	Battle_Track battle;
 	int next = num;
 	int i = 0;
+	ofstream output;
+
+	output.open("Battle.txt", ofstream::app);
 
 	system("cls");
 
@@ -768,7 +771,16 @@ void Monsters::Set_Battle_Vect(int num)
 		{
 			while (true)
 			{
-				//put in txt file
+				tempMon[i].currentHealth = tempMon[i].totalHealth;
+
+				output << tempMon[i].monName << ",";
+				output << tempMon[i].armorClass << ",";
+				output << tempMon[i].speed << ",";
+				output << tempMon[i].initiative << ",";
+				output << tempMon[i].passivePerception << ",";
+				output << tempMon[i].totalHealth << ",";
+				output << tempMon[i].currentHealth << ",";
+				output << tempMon[i].challengeRating << endl;
 
 				i = 0;
 				count = 0;
@@ -776,6 +788,7 @@ void Monsters::Set_Battle_Vect(int num)
 			}
 		}
 	}
+	output.close();
 }
 void Monsters::Read_Monster_File_Battle()
 {
