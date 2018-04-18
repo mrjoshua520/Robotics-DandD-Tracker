@@ -1,2 +1,2 @@
-Storm,Arianna,Paladin,Gnome,CN,15,2,16,3,17,3,14,2,16,3,14,2,15,30,4,122,13,45,3
-Draksanth,Joshua,Warlock,Fey,LE,12,1,12,1,12,1,18,4,18,4,18,4,14,25,4,222,14,55,19
+Storm,Arianna,Paladin,Gnome,Chaotic Neutral,16,3,11,0,14,2,14,2,14,2,16,3,13,25,0,31,12,1218,3
+Zanderian,Vince,Sorcerer,Human,Chaotic Neutral,9,0,16,3,14,2,13,1,13,1,18,4,16,30,3,21,11,1218,3

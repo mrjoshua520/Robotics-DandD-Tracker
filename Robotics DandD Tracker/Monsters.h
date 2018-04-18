@@ -20,7 +20,7 @@ private:
 	string type;
 	string size;
 	string Alignment;
-	int challengeRating;
+	double challengeRating;
 	int strScore;
 	int dexScore;
 	int conScore;
@@ -45,12 +45,16 @@ public:
 	vector<Monsters> tempMon;
 
 	string monName;
+	string mini;
 	int totalHealth;
 	int currentHealth;
 	int initiative;
 	int armorClass;
 	int speed;
 	int passivePerception;
+	int pass;
+	int fail;
+	bool dead = false;
 
 	void Read_Monster_File();
 	void Read_Monster_File_Battle();

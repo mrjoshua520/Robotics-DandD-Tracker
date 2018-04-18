@@ -21,7 +21,11 @@ private:
 		int Speed;
 		int Armor_Class;
 		int Passive_Perception;
-		int Challenge_Rating;
+		double Challenge_Rating;
+		string Mini_Used;
+		int DST_Fails;
+		int DST_Passes;
+		bool dead = false;
 	};
 
 public:
@@ -33,6 +37,11 @@ public:
 	Batttle_Stats InitStats;
 	int Can_Battle();
 	void Vect_SetUp();
+	void Init_Roll();
 	void Vect_Ini_Sort();
+	void Battle_System();
+	void Display_List();
+	void Battle_End();
+	double EXP_Calc(double);
 };
 

@@ -35,7 +35,6 @@ int main()
 		cout << "Enter 4 for Random Shop Names." << endl;
 		cout << "Enter 5 for Random People Names." << endl;
 		cout << "Enter 6 for a Battle Tracker." << endl;
-		cout << "Enter 7 for Misc Stuff." << endl;
 		cout << "Enter -999 to end the program." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -63,10 +62,6 @@ int main()
 		else if (Input == "6")
 		{
 			Battle_Tracker();
-		}
-		else if (Input == "7")
-		{
-			MiscStuff Misc;
 		}
 		else if (Input == "-999")
 		{
@@ -290,10 +285,12 @@ void Battle_Tracker()
 
 		battle.Vect_SetUp();
 
-		battle.Test();
+		battle.Init_Roll();
 
-		//For battle tracker: Array that swaps in linear search. Orders into highest to lowest order.
-		//After this will be the actual battle stuff using the newly made vectoir
+		battle.Vect_Ini_Sort();
+
+		battle.Battle_System();
+		//Ask for saving throw tracker when dead
 	}
 }
 //================================================================

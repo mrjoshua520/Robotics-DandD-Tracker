@@ -1501,10 +1501,20 @@ int Players::Read_Character_File_Battle()
 
 				battle.battleVect[count].InitStats.Challenge_Rating = 0;
 
+				system("cls");
+
 				cout << "What is " << battle.battleVect[count].InitStats.Name << "'s current HP? ";
 				cin >> HP;
 
 				battle.battleVect[count].InitStats.Current_Health = HP;
+
+				battle.battleVect[count].InitStats.Mini_Used = "Player";
+
+				battle.battleVect[count].InitStats.DST_Passes = 0;
+
+				battle.battleVect[count].InitStats.DST_Fails = 0;
+
+				battle.battleVect[count].InitStats.dead = false;
 
 				num++;
 			}
@@ -1536,6 +1546,10 @@ void Players::Store_Battle()
 		output << batt.InitStats.Passive_Perception << ",";
 		output << batt.InitStats.Total_Health << ",";
 		output << batt.InitStats.Current_Health << ",";
-		output << batt.InitStats.Challenge_Rating << endl;
+		output << batt.InitStats.Challenge_Rating << ",";
+		output << batt.InitStats.Mini_Used << ",";
+		output << batt.InitStats.DST_Passes << ",";
+		output << batt.InitStats.DST_Fails << ",";
+		output << batt.InitStats.dead << endl;
 	}
 }

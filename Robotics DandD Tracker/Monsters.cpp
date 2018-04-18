@@ -115,7 +115,7 @@ void Monsters::Read_Monster_File()
 				name = name.substr(comma + 1);
 
 				comma = name.find(',');
-				monster[count].challengeRating = stoi(name.substr(0, comma));
+				monster[count].challengeRating = stod(name.substr(0, comma));
 				name = name.substr(comma + 1);
 			}
 		}
@@ -723,6 +723,7 @@ void Monsters::Set_Battle_Vect(int num)
 	int next = num;
 	int i = 0;
 	ofstream output;
+	int I = 1;
 
 	output.open("Battle.txt", ofstream::app);
 
@@ -733,6 +734,8 @@ void Monsters::Set_Battle_Vect(int num)
 
 	for (int j = 0; j < input; j++)
 	{
+		system("cls");
+
 		cout << "What monster are you adding to the fight?" << endl << endl;
 		cout << endl << "=====CURRENT Monsters======" << endl;
 
@@ -771,6 +774,8 @@ void Monsters::Set_Battle_Vect(int num)
 		{
 			while (true)
 			{
+				string mini;
+
 				tempMon[i].currentHealth = tempMon[i].totalHealth;
 
 				output << tempMon[i].monName << ",";
@@ -780,10 +785,24 @@ void Monsters::Set_Battle_Vect(int num)
 				output << tempMon[i].passivePerception << ",";
 				output << tempMon[i].totalHealth << ",";
 				output << tempMon[i].currentHealth << ",";
-				output << tempMon[i].challengeRating << endl;
+				output << tempMon[i].challengeRating << ",";
+
+				cout << endl << endl << "What mini is monster " << I << " (" << tempMon[i].monName << ") using? ";
+				cin >> mini;
+
+				tempMon[i].mini = mini;
+				tempMon[i].pass = 0;
+				tempMon[i].fail = 0;
+				tempMon[i].dead = false;
+
+				output << tempMon[i].mini << ",";
+				output << tempMon[i].pass << ",";
+				output << tempMon[i].fail << ",";
+				output << tempMon[i].dead << endl;
 
 				i = 0;
 				count = 0;
+				I++;
 				break;
 			}
 		}
@@ -807,6 +826,8 @@ void Monsters::Read_Monster_File_Battle()
 		{
 			for (int count = 0; getline(inputFileMon, name); count++)
 			{
+				mini = "";
+
 				tempMon.push_back(Monsters());
 
 				comma = name.find(',');
