@@ -1,4 +1,6 @@
-﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
-  Battle_Track.cpp
+﻿  RoboticsDandDTracker.cpp
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\roboticsdanddtracker.cpp(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\roboticsdanddtracker.cpp(351): warning C4101: 'input': unreferenced local variable
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\roboticsdanddtracker.cpp(397): warning C4101: 'Dice_Roll': unreferenced local variable
   Robotics DandD Tracker.vcxproj -> C:\Users\joshu\source\repos\Robotics DandD Tracker\Debug\Robotics DandD Tracker.exe
   Robotics DandD Tracker.vcxproj -> C:\Users\joshu\source\repos\Robotics DandD Tracker\Debug\Robotics DandD Tracker.pdb (Partial PDB)

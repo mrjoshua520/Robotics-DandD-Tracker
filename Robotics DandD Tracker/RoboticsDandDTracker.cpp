@@ -8,6 +8,7 @@ using namespace std;
 
 void Party_Stats();
 void Monster_Stats();
+void NPC_Stats();
 void Random_Item();
 void Random_Shop();
 void Random_Person();
@@ -31,10 +32,11 @@ int main()
 		cout << "Enter your selection of the following options." << endl;
 		cout << "Enter 1 for Party Stats." << endl;
 		cout << "Enter 2 for Monster Stats." << endl;
-		cout << "Enter 3 for Random Item Generator." << endl;
-		cout << "Enter 4 for Random Shop Names." << endl;
-		cout << "Enter 5 for Random People Names." << endl;
-		cout << "Enter 6 for a Battle Tracker." << endl;
+		cout << "Enter 3 for NPC stats." << endl;
+		cout << "Enter 4 for Random Item Generator." << endl;
+		cout << "Enter 5 for Random Shop Names." << endl;
+		cout << "Enter 6 for Random People Names." << endl;
+		cout << "Enter 7 for a Battle Tracker." << endl;
 		cout << "Enter -999 to end the program." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -49,17 +51,21 @@ int main()
 		}
 		else if (Input == "3")
 		{
-			Random_Item();
+			NPC_Stats();
 		}
 		else if (Input == "4")
 		{
-			Random_Shop();
+			Random_Item();
 		}
 		else if (Input == "5")
 		{
-			Random_Person();
+			Random_Shop();
 		}
 		else if (Input == "6")
+		{
+			Random_Person();
+		}
+		else if (Input == "7")
 		{
 			Battle_Tracker();
 		}
@@ -133,7 +139,7 @@ void Party_Stats()
 }
 //================================================================
 
-//==================Display + Set Monster Stats=====================
+//==================Display + Set Monster Stats===================
 void Monster_Stats()
 {
 	Monsters mons;
@@ -178,6 +184,13 @@ void Monster_Stats()
 			Sleep(5000);
 		}
 	}
+}
+//================================================================
+
+//==================NPC Stats Display and Set=====================
+void NPC_Stats()
+{
+
 }
 //================================================================
 
@@ -234,15 +247,13 @@ void Random_Shop()
 {
 	bool BadInput = true;
 	string Input;
-	int Dice_Roll;
-	const int Dice_Max = 99;
 
 	while (BadInput)
 	{
 		system("cls");
-		cout << "Select which type of single item you want to generate." << endl;
-		cout << "Enter 1 for a tool." << endl;
-		cout << "Enter 2 for a weapon." << endl;
+		cout << "Select what you want to generate." << endl;
+		cout << "Enter 1 for a random shop name only." << endl;
+		cout << "Enter 2 for a full shop with a preset type." << endl;
 		cout << "Enter -999 to return to the menu." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -251,15 +262,21 @@ void Random_Shop()
 
 		if (Input == "1")
 		{
+			//can be done at literally any point
 
+			//will give choice for what type of shop and generate from there.
 		}
 		else if (Input == "2")
 		{
-			
+			//needs to have these things done
+			//--People Name gen
+			//--Shop name gen
+
+			//will give choice for what type of shop and generate from there.
 		}
 		else if (Input == "-999")
 		{
-			Random_Item();
+			main();
 		}
 		else
 		{
@@ -274,7 +291,49 @@ void Random_Shop()
 //==========================Random Person=========================
 void Random_Person()
 {
+	bool BadInput = true;
+	string Input;
 
+	while (BadInput)
+	{
+		system("cls");
+		cout << "Select what you want to generate." << endl;
+		cout << "Enter 1 for a random person name only." << endl;
+		cout << "Enter 2 for a full person with a preset type." << endl;
+		cout << "Enter 3 for a full random person" << endl;
+		cout << "Enter -999 to return to the menu." << endl;
+		cout << "Selection: ";
+		cin >> Input;
+
+		cout << endl;
+
+		if (Input == "1")
+		{
+			//can be done at any point
+		}
+		else if (Input == "2")
+		{
+			//needs to have these things done
+			//--People name gen
+			//--NPC tracker
+		}
+		else if (Input == "2")
+		{
+			//needs to have these things done
+			//--People name gen
+			//--NPC tracker
+		}
+		else if (Input == "-999")
+		{
+			main();
+		}
+		else
+		{
+			system("cls");
+			cout << "Bad Input. Try Again.";
+			Sleep(5000);
+		}
+	}
 }
 //================================================================
 
