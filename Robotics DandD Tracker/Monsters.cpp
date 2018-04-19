@@ -16,6 +16,8 @@ Monsters::~Monsters()
 
 void Monsters::Read_Monster_File()
 {
+	//reads the text file and stores it into the vector
+
 	ifstream inputFileMon;
 
 	inputFileMon.open(fileName);
@@ -131,6 +133,8 @@ void Monsters::Read_Monster_File()
 }
 void Monsters::Delete_Monster()
 {
+	//deletes monster from the text file
+
 	ifstream inputFileMon;
 	ofstream tempMon;
 	string Input;
@@ -194,6 +198,8 @@ void Monsters::Delete_Monster()
 }
 void Monsters::Add_Monster()
 {
+	//adds a monster to the text file
+
 	outputFileMon.open(fileName, ofstream::app);
 
 	bool BadInput = true;
@@ -644,6 +650,8 @@ void Monsters::Add_Monster()
 }
 void Monsters::View_Monsters()
 {
+	//allows the user to view current monsters
+
 	string Input;
 
 	inputFileMon.open(fileName);
@@ -716,6 +724,8 @@ void Monsters::View_Monsters()
 }
 void Monsters::Set_Battle_Vect(int num)
 {
+	//sets the text file for battle according to the temp vector
+
 	int input;
 	string Input;
 	int count = 0;
@@ -811,6 +821,8 @@ void Monsters::Set_Battle_Vect(int num)
 }
 void Monsters::Read_Monster_File_Battle()
 {
+	//reads data into the tempVect for battle
+
 	ifstream inputFileMon;
 	Battle_Track battle;
 	int temps;

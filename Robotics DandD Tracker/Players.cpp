@@ -17,6 +17,8 @@ Players::~Players()
 
 void Players::Read_Character_File()
 {
+	//reads the text file for players and stores into a vector
+
 	ifstream inputFile;
 
 	inputFile.open(fileName);
@@ -140,6 +142,8 @@ void Players::Read_Character_File()
 }
 void Players::View_Characters()
 {
+	//allows users to view current players
+
 	string Input;
 
 	inputFile.open(fileName);
@@ -214,6 +218,8 @@ void Players::View_Characters()
 }
 void Players::Level_Up_Characters()
 {
+	//levels up one player while keeping others the same
+
 	ifstream inputFile;
 	ofstream temp;
 	string Input;
@@ -827,6 +833,8 @@ void Players::Level_Up_Characters()
 }
 void Players::Delete_Character()
 {
+	//deletes a player from the txt file
+
 	ifstream inputFile;
 	ofstream temp;
 	string Input;
@@ -890,6 +898,8 @@ void Players::Delete_Character()
 }
 void Players::Add_Character()
 {
+	//adds a player to the text file
+
 	outputFile.open(fileName, ofstream::app);
 
 	bool BadInput = true;
@@ -1385,6 +1395,8 @@ void Players::Add_Character()
 }
 int Players::Read_Character_File_Battle()
 {
+	//reads the data from the txt file into the battle vector
+
 	string temp;
 	int temps;
 	ifstream inputFile;
@@ -1533,6 +1545,8 @@ int Players::Read_Character_File_Battle()
 }
 void Players::Store_Battle()
 {
+	//stores the battle vector into the battle txt file
+
 	ofstream output;
 
 	output.open("Battle.txt", ofstream::app);

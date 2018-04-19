@@ -14,6 +14,8 @@ MiscStuff::~MiscStuff()
 
 string MiscStuff::Chaos_Bolt()
 {
+	//finds the damage type of the spell chaos bolt
+
 	bool BadInput = true;
 	string Input;
 

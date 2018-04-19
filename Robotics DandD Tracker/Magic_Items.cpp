@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Magic_Items.h"
 
+//generates magic items randomly
 
 Magic_Items::Magic_Items()
 {

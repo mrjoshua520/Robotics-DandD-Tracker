@@ -1,6 +1,0 @@
-Storm,13,25,0,12,31,14,0,Player,0,0,0
-Zanderian,16,30,3,11,21,13,0,Player,0,0,0
-Gargoyle,15,30,0,10,52,52,2,fire,0,0,0
-Gargoyle,15,30,0,10,52,52,2,water,0,0,0
-Storm,13,25,0,12,31,13,0,Player,0,0,0
-Zanderian,16,30,3,11,21,13,0,Player,0,0,0

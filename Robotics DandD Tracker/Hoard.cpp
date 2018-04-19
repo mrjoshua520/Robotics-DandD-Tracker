@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Hoard.h"
 
+//combines all the random items into one hoard of items
 
 Hoard::Hoard()
 {

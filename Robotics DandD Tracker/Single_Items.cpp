@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Single_Items.h"
 
+//all this is doing is generating random equipment
 
 Single_Items::Single_Items()
 {

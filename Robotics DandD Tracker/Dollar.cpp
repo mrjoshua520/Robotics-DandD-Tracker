@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Dollar.h"
 
+//generates random gold
 
 Dollar::Dollar()
 {

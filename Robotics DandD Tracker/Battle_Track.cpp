@@ -43,6 +43,8 @@ int Battle_Track::Can_Battle()
 
 void Battle_Track::Vect_SetUp()
 {
+	//Function takes the battle.txt file and stores all the info into a vector
+
 	ifstream input;
 	string name;
 
@@ -105,6 +107,8 @@ void Battle_Track::Vect_SetUp()
 
 void Battle_Track::Init_Roll()
 {
+	//function is used for adding the roll of initiative to the initiative mod
+
 	int init_roll;
 	int i = 0;
 
@@ -124,6 +128,8 @@ void Battle_Track::Init_Roll()
 
 void Battle_Track::Vect_Ini_Sort()
 {
+	//bubble sorts the vector by initiative number
+
 	static int passes = 0;
 	int index = 0;
 	Battle_Track temp;
@@ -175,6 +181,8 @@ void Battle_Track::Vect_Ini_Sort()
 
 void Battle_Track::Battle_System()
 {
+	//the main battle function
+
 	int number = 0;
 	bool Battle = true;
 	int round = 1;
@@ -184,16 +192,16 @@ void Battle_Track::Battle_System()
 	MiscStuff misc;
 	int death_save;
 
-	for (Battle_Track bat : battleVect)
+	for (Battle_Track bat : battleVect) //finds how many people are in the battle
 	{
 		number++;
 	}
 	
-	while (Battle)
+	while (Battle) //runs while battle is true
 	{
 		for (int j = number, i = 0; j > 0; i++, j--)
 		{
-			if (battleVect[j -1].InitStats.dead == true)
+			if (battleVect[j -1].InitStats.dead == true) //if the current player is dead
 			{
 				system("cls");
 				Display_List();
@@ -201,7 +209,7 @@ void Battle_Track::Battle_System()
 				cout << endl << endl << endl;
 				cout << battleVect[j - 1].InitStats.Name << " is dead." << endl << endl;
 			}
-			else if (battleVect[j - 1].InitStats.Current_Health <= 0)
+			else if (battleVect[j - 1].InitStats.Current_Health <= 0) //if the current player is unconscious
 			{
 				system("cls");
 				Display_List();
@@ -264,7 +272,7 @@ void Battle_Track::Battle_System()
 					cout << "You remain unconscious." << endl << endl;
 				}
 			}
-			else
+			else //if the player is alive
 			{
 				system("cls");
 				Display_List();
@@ -291,7 +299,7 @@ void Battle_Track::Battle_System()
 				cout << endl << "This will clear the screen. Are you Sure?" << endl;
 				system("pause");
 
-			for (int j = number, i = 0; j > 0; i++, j--)
+			for (int j = number, i = 0; j > 0; i++, j--) //did take damage loop
 			{
 				system("cls");
 				Display_List();
@@ -334,6 +342,8 @@ void Battle_Track::Battle_System()
 
 void Battle_Track::Display_List()
 {
+	//the order and stats display
+
 	int number = 0;
 
 	for (Battle_Track bat : battleVect)
@@ -349,6 +359,8 @@ void Battle_Track::Display_List()
 
 void Battle_Track::Battle_End()
 {
+	//the end of the battle
+
 	int count = 0;
 	double ExpTotal = 0;
 	double temp;
@@ -378,6 +390,8 @@ void Battle_Track::Battle_End()
 
 double Battle_Track::EXP_Calc(double challenge)
 {
+	//calcs the exp according to challenge rating
+
 	if (challenge == 0)
 	{
 		return 0;

@@ -22,9 +22,9 @@ int main()
 {
 	bool BadInput = true;
 	string Input;
-	srand(time(NULL));
-	system("MODE 650");
-	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
+	srand(time(NULL));//needed for random
+	system("MODE 650");//this along with----------V
+	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);//this sets the screen to max size
 	while (BadInput)
 	{
 		system("cls");
@@ -232,7 +232,42 @@ void Random_Item()
 //============================Random Shops========================
 void Random_Shop()
 {
+	bool BadInput = true;
+	string Input;
+	int Dice_Roll;
+	const int Dice_Max = 99;
 
+	while (BadInput)
+	{
+		system("cls");
+		cout << "Select which type of single item you want to generate." << endl;
+		cout << "Enter 1 for a tool." << endl;
+		cout << "Enter 2 for a weapon." << endl;
+		cout << "Enter -999 to return to the menu." << endl;
+		cout << "Selection: ";
+		cin >> Input;
+
+		cout << endl;
+
+		if (Input == "1")
+		{
+
+		}
+		else if (Input == "2")
+		{
+			
+		}
+		else if (Input == "-999")
+		{
+			Random_Item();
+		}
+		else
+		{
+			system("cls");
+			cout << "Bad Input. Try Again.";
+			Sleep(5000);
+		}
+	}
 }
 //================================================================
 
@@ -259,14 +294,14 @@ void Battle_Tracker()
 
 	canBattle = battle.Can_Battle(); //Returns 0 if can 1 if not player info or 2 if no monster info
 
-	if (canBattle == 1)
+	if (canBattle == 1) //checks to see if the player.txt file has data
 	{
 		system("cls");
 		cout << "There is no player information. That information is needed before the battle tracker can run." << endl << endl;
 		system("pause");
 		main();
 	}
-	else if (canBattle == 2)
+	else if (canBattle == 2)//checks the monster.txt file for data
 	{
 		system("cls");
 		cout << "There is no monster information. That information is needed before the battle tracker can run." << endl << endl;
