@@ -1,2 +1,4 @@
 Phase_Spider,Monstrosity,Large,Unaligned,15,2,15,2,12,1,6,-2,10,0,6,-2,13,30,2,32,10,3
 Gargoyle,Elemental,Medium,Chaotic Evil,15,2,11,0,16,3,6,-2,11,0,7,-1,15,30,0,52,10,2
+Draksanth_Goon_Lv2,Humanoid,Medium,Lawful Evil,14,2,14,2,15,2,12,1,12,1,10,0,14,30,2,20,11,2
+Balthazar,Humanoid,Medium,Lawful Evil,36,13,10,0,20,5,10,0,20,5,19,4,44,30,9,200,15,20

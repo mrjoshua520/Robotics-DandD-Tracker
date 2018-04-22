@@ -1,2 +1,3 @@
 Storm,Arianna,Paladin,Gnome,Chaotic Neutral,16,3,11,0,14,2,14,2,14,2,16,3,13,25,0,31,12,1218,3
 Zanderian,Vince,Sorcerer,Human,Chaotic Neutral,9,0,16,3,14,2,13,1,13,1,18,4,16,30,3,21,11,1218,3
+Gonfrad,Ethan,Rogue/Engineer,Halfling,Chaotic Neutral,10,0,20,5,13,1,16,3,13,1,16,3,16,25,5,21,11,1218,3

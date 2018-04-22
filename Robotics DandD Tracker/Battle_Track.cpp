@@ -120,7 +120,7 @@ void Battle_Track::Init_Roll()
 		cout << "Roll: ";
 		cin >> init_roll;
 
-		battleVect[i].InitStats.Initiative += init_roll;
+		battleVect[i].InitStats.Initiative = init_roll;
 
 		i++;
 	}
@@ -211,69 +211,84 @@ void Battle_Track::Battle_System()
 			}
 			else if (battleVect[j - 1].InitStats.Current_Health <= 0) //if the current player is unconscious
 			{
-				system("cls");
-				Display_List();
-				cout << endl << endl << "Round " << round;
-				cout << endl << endl << endl;
-				cout << battleVect[j - 1].InitStats.Name << " is unconcious." << endl << endl;
-				cout << battleVect[j - 1].InitStats.Name << " has passed " << battleVect[j - 1].InitStats.DST_Passes << " death saving throws and has failed " << battleVect[j - 1].InitStats.DST_Fails << " death saving throws." << endl << endl;
-				cout << "Please roll a death saving throw." << endl;
-				cout << "Roll Value: ";
-				cin >> death_save;
-
-				if (death_save < 10)
+				if (battleVect[j - 1].InitStats.Mini_Used == "Player")
 				{
-					if (death_save == 1)
+					system("cls");
+					Display_List();
+					cout << endl << endl << "Round " << round;
+					cout << endl << endl << endl;
+					cout << battleVect[j - 1].InitStats.Name << " is unconcious." << endl << endl;
+					cout << battleVect[j - 1].InitStats.Name << " has passed " << battleVect[j - 1].InitStats.DST_Passes << " death saving throws and has failed " << battleVect[j - 1].InitStats.DST_Fails << " death saving throws." << endl << endl;
+					cout << "Please roll a death saving throw." << endl;
+					cout << "Roll Value: ";
+					cin >> death_save;
+
+					if (death_save < 10)
 					{
-						battleVect[j - 1].InitStats.DST_Fails += 2;
+						if (death_save == 1)
+						{
+							battleVect[j - 1].InitStats.DST_Fails += 2;
+						}
+						else
+						{
+							battleVect[j - 1].InitStats.DST_Fails += 1;
+						}
 					}
 					else
 					{
-						battleVect[j - 1].InitStats.DST_Fails += 1;
+						if (death_save == 20)
+						{
+							battleVect[j - 1].InitStats.DST_Passes = 100;
+						}
+						else
+						{
+							battleVect[j - 1].InitStats.DST_Passes += 1;
+						}
+					}
+
+					cout << endl << endl;
+
+					if (battleVect[j - 1].InitStats.DST_Fails >= 3)
+					{
+						battleVect[j - 1].InitStats.dead = true;
+						cout << "You feel your breath escape you. You are dead." << endl << endl;
+						battleVect[j - 1].InitStats.DST_Fails = 0;
+						battleVect[j - 1].InitStats.DST_Passes = 0;
+						PlaySound(TEXT("Sword_Death.wav"), NULL, SND_SYNC);
+					}
+					else if (battleVect[j - 1].InitStats.DST_Passes == 100)
+					{
+						battleVect[j - 1].InitStats.Current_Health = 1;
+						cout << "You restore 1 HP and automatically regain consciousness." << endl << endl;
+						battleVect[j - 1].InitStats.DST_Fails = 0;
+						battleVect[j - 1].InitStats.DST_Passes = 0;
+					}
+					else if (battleVect[j - 1].InitStats.DST_Passes >= 3 && battleVect[j - 1].InitStats.DST_Passes != 100)
+					{
+						battleVect[j - 1].InitStats.Current_Health = 1;
+						cout << "You stableize." << endl << endl;
+						battleVect[j - 1].InitStats.DST_Fails = 0;
+						battleVect[j - 1].InitStats.DST_Passes = 0;
+					}
+					else
+					{
+						cout << "You remain unconscious." << endl << endl;
 					}
 				}
 				else
 				{
-					if (death_save == 20)
-					{
-						battleVect[j - 1].InitStats.DST_Passes = 100;
-					}
-					else
-					{
-						battleVect[j - 1].InitStats.DST_Passes += 1;
-					}
-				}
-
-				cout << endl << endl;
-
-				if (battleVect[j - 1].InitStats.DST_Fails >= 3)
-				{
-					battleVect[j - 1].InitStats.dead = true;
-					cout << "You feel your breath escape you. You are dead." << endl << endl;
-					battleVect[j - 1].InitStats.DST_Fails = 0;
-					battleVect[j - 1].InitStats.DST_Passes = 0;
-				}
-				else if (battleVect[j - 1].InitStats.DST_Passes == 100)
-				{
-					battleVect[j - 1].InitStats.Current_Health = 1;
-					cout << "You restore 1 HP and automatically regain consciousness." << endl << endl;
-					battleVect[j - 1].InitStats.DST_Fails = 0;
-					battleVect[j - 1].InitStats.DST_Passes = 0;
-				}
-				else if (battleVect[j - 1].InitStats.DST_Passes >= 3 && battleVect[j - 1].InitStats.DST_Passes != 100)
-				{
-					battleVect[j - 1].InitStats.Current_Health = 1;
-					cout << "You stableize." << endl << endl;
-					battleVect[j - 1].InitStats.DST_Fails = 0;
-					battleVect[j - 1].InitStats.DST_Passes = 0;
-				}
-				else
-				{
-					cout << "You remain unconscious." << endl << endl;
+					system("cls");
+					Display_List();
+					cout << endl << endl << "Round " << round;
+					cout << endl << endl << endl;
+					PlaySound(TEXT("Sword_Death.wav"), NULL, SND_SYNC);
+					cout << battleVect[j - 1].InitStats.Name << " is dead." << endl << endl;
 				}
 			}
 			else //if the player is alive
 			{
+				battleVect[j - 1].InitStats.DST_Fails = 0;
+				battleVect[j - 1].InitStats.DST_Passes = 0;
 				system("cls");
 				Display_List();
 				cout << endl << endl << "Round " << round;
@@ -353,7 +368,7 @@ void Battle_Track::Display_List()
 
 	for (int j = number, i = 1; j > 0; i++, j--)
 	{
-		cout << "Number " << i + 1 << ": " << battleVect[j - 1].InitStats.Name << " has " << battleVect[j - 1].InitStats.Current_Health << " / " << battleVect[j - 1].InitStats.Total_Health << ". Initiative Score of " << battleVect[j - 1].InitStats.Initiative << ". Armor Class: " << battleVect[j - 1].InitStats.Armor_Class << "." << endl;
+		cout << "Number " << i << ": " << battleVect[j - 1].InitStats.Name << " has " << battleVect[j - 1].InitStats.Current_Health << " / " << battleVect[j - 1].InitStats.Total_Health << ". Initiative Score of " << battleVect[j - 1].InitStats.Initiative << ". Armor Class: " << battleVect[j - 1].InitStats.Armor_Class << "." << endl;
 	}
 }
 
