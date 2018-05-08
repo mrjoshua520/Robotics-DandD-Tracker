@@ -21,6 +21,8 @@
     <Text Include="Monsters.txt" />
     <Text Include="tempMon.txt" />
     <Text Include="Battle.txt" />
+    <Text Include="TempNPC.txt" />
+    <Text Include="NPCs.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -62,6 +64,9 @@
     <ClInclude Include="Battle_Track.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NPCs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -95,6 +100,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Battle_Track.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

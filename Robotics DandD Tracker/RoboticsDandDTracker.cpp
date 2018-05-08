@@ -32,7 +32,7 @@ int main()
 		cout << "Enter your selection of the following options." << endl;
 		cout << "Enter 1 for Party Stats." << endl;
 		cout << "Enter 2 for Monster Stats." << endl;
-		cout << "Enter 3 for NPC stats." << endl;
+		cout << "Enter 3 for NPC Stats." << endl;
 		cout << "Enter 4 for Random Item Generator." << endl;
 		cout << "Enter 5 for Random Shop Names." << endl;
 		cout << "Enter 6 for Random People Names." << endl;
@@ -187,10 +187,57 @@ void Monster_Stats()
 }
 //================================================================
 
-//==================NPC Stats Display and Set=====================
+//==================Display + Set Party Stats=====================
 void NPC_Stats()
 {
+	NPCs PCs;
+	string Input;
+	bool BadInput = true;
 
+	while (BadInput)
+	{
+		system("cls");
+		cout << "Enter what you want to do with the NPCs." << endl;
+		cout << "Enter 1 to View their stats." << endl;
+		cout << "Enter 2 to Add an NPC." << endl;
+		cout << "Enter 3 to Delete an NPC." << endl;
+		cout << "Enter 4 Level Up an NPC." << endl;
+		cout << "Enter -999 to return to the menu." << endl;
+		cout << "Selection: ";
+		cin >> Input;
+		cin.ignore();
+
+		if (Input == "1")
+		{
+			PCs.Read_NPC_File();
+			PCs.View_NPC();
+		}
+		else if (Input == "2")
+		{
+			PCs.Add_NPC();
+			PCs.Read_NPC_File();
+		}
+		else if (Input == "3")
+		{
+			PCs.Read_NPC_File();
+			PCs.Delete_NPC();
+		}
+		else if (Input == "4")
+		{
+			PCs.Read_NPC_File();
+			PCs.Level_Up_NPC();
+		}
+		else if (Input == "-999")
+		{
+			main();
+		}
+		else
+		{
+			system("cls");
+			cout << "Bad Input. Try Again.";
+			Sleep(5000);
+		}
+	}
 }
 //================================================================
 

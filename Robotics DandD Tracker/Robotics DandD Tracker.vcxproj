@@ -147,9 +147,11 @@
     <Text Include="Battle.txt" />
     <Text Include="Characters.txt" />
     <Text Include="Monsters.txt" />
+    <Text Include="NPCs.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="temp.txt" />
     <Text Include="tempMon.txt" />
+    <Text Include="TempNPC.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Battle_Track.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="Magic_Items.h" />
     <ClInclude Include="MiscStuff.h" />
     <ClInclude Include="Monsters.h" />
+    <ClInclude Include="NPCs.h" />
     <ClInclude Include="Players.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Single_Items.h" />
@@ -174,6 +177,7 @@
     <ClCompile Include="Magic_Items.cpp" />
     <ClCompile Include="MiscStuff.cpp" />
     <ClCompile Include="Monsters.cpp" />
+    <ClCompile Include="NPCs.cpp" />
     <ClCompile Include="Players.cpp" />
     <ClCompile Include="RoboticsDandDTracker.cpp" />
     <ClCompile Include="Single_Items.cpp" />

@@ -13,4 +13,5 @@
 #include "MiscStuff.h"
 #include "Players.h"
 #include "Monsters.h"
+#include "NPCs.h"
 #include "Battle_Track.h"
