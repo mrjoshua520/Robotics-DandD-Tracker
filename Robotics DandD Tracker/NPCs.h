@@ -21,6 +21,10 @@ private:
 	string race;
 	string playerName;
 	string Alignment;
+	string Personality;
+	string Voice;
+	string Job;
+	string Location;
 	int level;
 	int expPoints;
 	int strScore;
@@ -55,8 +59,8 @@ public:
 
 	void Read_NPC_File();
 	void View_NPC();
-	void Level_Up_NPC();
 	void Delete_NPC();
 	void Add_NPC();
+	string Random_Name(string, int);
 };
 

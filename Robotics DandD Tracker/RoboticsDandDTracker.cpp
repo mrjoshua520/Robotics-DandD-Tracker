@@ -201,7 +201,6 @@ void NPC_Stats()
 		cout << "Enter 1 to View their stats." << endl;
 		cout << "Enter 2 to Add an NPC." << endl;
 		cout << "Enter 3 to Delete an NPC." << endl;
-		cout << "Enter 4 Level Up an NPC." << endl;
 		cout << "Enter -999 to return to the menu." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -221,11 +220,6 @@ void NPC_Stats()
 		{
 			PCs.Read_NPC_File();
 			PCs.Delete_NPC();
-		}
-		else if (Input == "4")
-		{
-			PCs.Read_NPC_File();
-			PCs.Level_Up_NPC();
 		}
 		else if (Input == "-999")
 		{
@@ -340,6 +334,7 @@ void Random_Person()
 {
 	bool BadInput = true;
 	string Input;
+	NPCs npc;
 
 	while (BadInput)
 	{
@@ -356,7 +351,101 @@ void Random_Person()
 
 		if (Input == "1")
 		{
-			//can be done at any point
+			string name;
+
+			while (true)
+			{
+				system("cls");
+				cout << "Select the race of the NPC." << endl;
+				cout << "1. Human." << endl;
+				cout << "2. Elf." << endl;
+				cout << "3. Half-Elf." << endl;
+				cout << "4. Dwarf." << endl;
+				cout << "5. Gnome." << endl;
+				cout << "6. Halfling." << endl;
+				cout << "7. Half-Orc." << endl;
+				cout << "8. Tiefling." << endl;
+				cout << "9. Aasimar." << endl;
+				cout << "10. Dragonborn." << endl;
+				cout << "11. Orc" << endl;
+				cout << "Selection: ";
+				cin >> Input;
+
+				cout << endl;
+
+				if (Input == "1")
+				{
+					name = npc.Random_Name("Human", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "2")
+				{
+					name = npc.Random_Name("Elf", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "3")
+				{
+					name = npc.Random_Name("Half-Elf", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "4")
+				{
+					name = npc.Random_Name("Dwarf", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "5")
+				{
+					name = npc.Random_Name("Gnome", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "6")
+				{
+					name = npc.Random_Name("Halfling", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "7")
+				{
+					name = npc.Random_Name("Half-Orc", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "8")
+				{
+					name = npc.Random_Name("Tiefling", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "9")
+				{
+					name = npc.Random_Name("Aasimar", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "10")
+				{
+					name = npc.Random_Name("Dragonborn", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else if (Input == "11")
+				{
+					name = npc.Random_Name("Orc", 3);
+					cout << "Their name is " << name << "." << endl << endl;
+					system("pause");
+				}
+				else
+				{
+					system("cls");
+					cout << "Bad Input. Try Again" << endl;
+					system("pause");
+				}
+			}
 		}
 		else if (Input == "2")
 		{
@@ -364,7 +453,7 @@ void Random_Person()
 			//--People name gen
 			//--NPC tracker
 		}
-		else if (Input == "2")
+		else if (Input == "3")
 		{
 			//needs to have these things done
 			//--People name gen
