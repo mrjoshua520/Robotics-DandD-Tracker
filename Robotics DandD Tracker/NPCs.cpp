@@ -896,9 +896,1290 @@ string NPCs::Random_Name(string race, int gender)
 
 	if (race == "Human")
 	{
+		if (Gender == "Male")
+		{
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix == 1)
+				{
+					First_Name = "Jackson";
+					bad = false;
+				}
+				else if (Prefix == 2)
+				{
+					First_Name = "Aiden";
+					bad = false;
+				}
+				else if (Prefix == 3)
+				{
+					First_Name = "Lucas";
+					bad = false;
+				}
+				else if (Prefix == 4)
+				{
+					First_Name = "Liam";
+					bad = false;
+				}
+				else if (Prefix == 5)
+				{
+					First_Name = "Noah";
+					bad = false;
+				}
+				else if (Prefix == 6)
+				{
+					First_Name = "Mason";
+					bad = false;
+				}
+				else if (Prefix == 7)
+				{
+					First_Name = "Caden";
+					bad = false;
+				}
+				else if (Prefix == 8)
+				{
+					First_Name = "Oliver";
+					bad = false;
+				}
+				else if (Prefix == 9)
+				{
+					First_Name = "Ethan";
+					bad = false;
+				}
+				else if (Prefix == 10)
+				{
+					First_Name = "Elijah";
+					bad = false;
+				}
+				else if (Prefix == 11)
+				{
+					First_Name = "Grayson";
+					bad = false;
+				}
+				else if (Prefix == 12)
+				{
+					First_Name = "Jacob";
+					bad = false;
+				}
+				else if (Prefix == 13)
+				{
+					First_Name = "Michael";
+					bad = false;
+				}
+				else if (Prefix == 14)
+				{
+					First_Name = "Benjamin";
+					bad = false;
+				}
+				else if (Prefix == 15)
+				{
+					First_Name = "Carter";
+					bad = false;
+				}
+				else if (Prefix == 16)
+				{
+					First_Name = "James";
+					bad = false;
+				}
+				else if (Prefix == 17)
+				{
+					First_Name = "Jayden";
+					bad = false;
+				}
+				else if (Prefix == 18)
+				{
+					First_Name = "Logan";
+					bad = false;
+				}
+				else if (Prefix == 19)
+				{
+					First_Name = "Alexander";
+					bad = false;
+				}
+				else if (Prefix == 20)
+				{
+					First_Name = "Caleb";
+					bad = false;
+				}
+				else if (Prefix == 21)
+				{
+					First_Name = "Ryan";
+					bad = false;
+				}
+				else if (Prefix == 22)
+				{
+					First_Name = "Luke";
+					bad = false;
+				}
+				else if (Prefix == 23)
+				{
+					First_Name = "Daniel";
+					bad = false;
+				}
+				else if (Prefix == 24)
+				{
+					First_Name = "Jack";
+					bad = false;
+				}
+				else if (Prefix == 25)
+				{
+					First_Name = "William";
+					bad = false;
+				}
+				else if (Prefix == 26)
+				{
+					First_Name = "Owen";
+					bad = false;
+				}
+				else if (Prefix == 27)
+				{
+					First_Name = "Gabriel";
+					bad = false;
+				}
+				else if (Prefix == 28)
+				{
+					First_Name = "Matthew";
+					bad = false;
+				}
+				else if (Prefix == 29)
+				{
+					First_Name = "Conner";
+					bad = false;
+				}
+				else if (Prefix == 30)
+				{
+					First_Name = "Jayce";
+					bad = false;
+				}
+				else if (Prefix == 31)
+				{
+					First_Name = "Isaac";
+					bad = false;
+				}
+				else if (Prefix == 32)
+				{
+					First_Name = "Sebastian";
+					bad = false;
+				}
+				else if (Prefix == 33)
+				{
+					First_Name = "Henry";
+					bad = false;
+				}
+				else if (Prefix == 34)
+				{
+					First_Name = "Cameron";
+					bad = false;
+				}
+				else if (Prefix == 35)
+				{
+					First_Name = "Wyatt";
+					bad = false;
+				}
+				else if (Prefix == 36)
+				{
+					First_Name = "Muhammad";
+					bad = false;
+				}
+				else if (Prefix == 37)
+				{
+					First_Name = "Dylan";
+					bad = false;
+				}
+				else if (Prefix == 38)
+				{
+					First_Name = "Nathan";
+					bad = false;
+				}
+				else if (Prefix == 39)
+				{
+					First_Name = "Nicholas";
+					bad = false;
+				}
+				else if (Prefix == 40)
+				{
+					First_Name = "Julian";
+					bad = false;
+				}
+				else if (Prefix == 41)
+				{
+					First_Name = "Eli";
+					bad = false;
+				}
+				else if (Prefix == 42)
+				{
+					First_Name = "Levi";
+					bad = false;
+				}
+				else if (Prefix == 43)
+				{
+					First_Name = "Isaiah";
+					bad = false;
+				}
+				else if (Prefix == 44)
+				{
+					First_Name = "Landon";
+					bad = false;
+				}
+				else if (Prefix == 45)
+				{
+					First_Name = "David";
+					bad = false;
+				}
+				else if (Prefix == 46)
+				{
+					First_Name = "Christian";
+					bad = false;
+				}
+				else if (Prefix == 47)
+				{
+					First_Name = "Andrew";
+					bad = false;
+				}
+				else if (Prefix == 48)
+				{
+					First_Name = "Brayden";
+					bad = false;
+				}
+				else if (Prefix == 49)
+				{
+					First_Name = "John";
+					bad = false;
+				}
+				else if (Prefix == 50)
+				{
+					First_Name = "Lincoln";
+					bad = false;
+				}
+				else if (Prefix == 51)
+				{
+					First_Name = "Samuel";
+					bad = false;
+				}
+				else if (Prefix == 52)
+				{
+					First_Name = "Joseph";
+					bad = false;
+				}
+				else if (Prefix == 53)
+				{
+					First_Name = "Hunter";
+					bad = false;
+				}
+				else if (Prefix == 54)
+				{
+					First_Name = "Joshua";
+					bad = false;
+				}
+				else if (Prefix == 55)
+				{
+					First_Name = "Mateo";
+					bad = false;
+				}
+				else if (Prefix == 56)
+				{
+					First_Name = "Dominic";
+					bad = false;
+				}
+				else if (Prefix == 57)
+				{
+					First_Name = "Adam";
+					bad = false;
+				}
+				else if (Prefix == 58)
+				{
+					First_Name = "Leo";
+					bad = false;
+				}
+				else if (Prefix == 59)
+				{
+					First_Name = "Ian";
+					bad = false;
+				}
+				else if (Prefix == 60)
+				{
+					First_Name = "Josiah";
+					bad = false;
+				}
+				else if (Prefix == 61)
+				{
+					First_Name = "Anthony";
+					bad = false;
+				}
+				else if (Prefix == 62)
+				{
+					First_Name = "Colton";
+					bad = false;
+				}
+				else if (Prefix == 63)
+				{
+					First_Name = "Max";
+					bad = false;
+				}
+				else if (Prefix == 64)
+				{
+					First_Name = "Thomas";
+					bad = false;
+				}
+				else if (Prefix == 65)
+				{
+					First_Name = "Evan";
+					bad = false;
+				}
+				else if (Prefix == 66)
+				{
+					First_Name = "Nolan";
+					bad = false;
+				}
+				else if (Prefix == 67)
+				{
+					First_Name = "Aaron";
+					bad = false;
+				}
+				else if (Prefix == 68)
+				{
+					First_Name = "Carson";
+					bad = false;
+				}
+				else if (Prefix == 69)
+				{
+					First_Name = "Christopher";
+					bad = false;
+				}
+				else if (Prefix == 70)
+				{
+					First_Name = "Hudson";
+					bad = false;
+				}
+				else if (Prefix == 71)
+				{
+					First_Name = "Cooper";
+					bad = false;
+				}
+				else if (Prefix == 72)
+				{
+					First_Name = "Adrian";
+					bad = false;
+				}
+				else if (Prefix == 73)
+				{
+					First_Name = "Jonathan";
+					bad = false;
+				}
+				else if (Prefix == 74)
+				{
+					First_Name = "Jason";
+					bad = false;
+				}
+				else if (Prefix == 75)
+				{
+					First_Name = "Charlie";
+					bad = false;
+				}
+				else if (Prefix == 76)
+				{
+					First_Name = "Miles";
+					bad = false;
+				}
+				else if (Prefix == 77)
+				{
+					First_Name = "Jeremiah";
+					bad = false;
+				}
+				else if (Prefix == 78)
+				{
+					First_Name = "Gavin";
+					bad = false;
+				}
+				else if (Prefix == 79)
+				{
+					First_Name = "Asher";
+					bad = false;
+				}
+				else if (Prefix == 80)
+				{
+					First_Name = "Austin";
+					bad = false;
+				}
+				else if (Prefix == 81)
+				{
+					First_Name = "Ezra";
+					bad = false;
+				}
+				else if (Prefix == 82)
+				{
+					First_Name = "Chase";
+					bad = false;
+				}
+				else if (Prefix == 83)
+				{
+					First_Name = "Alex";
+					bad = false;
+				}
+				else if (Prefix == 84)
+				{
+					First_Name = "Xavier";
+					bad = false;
+				}
+				else if (Prefix == 85)
+				{
+					First_Name = "Jordan";
+					bad = false;
+				}
+				else if (Prefix == 86)
+				{
+					First_Name = "Tristan";
+					bad = false;
+				}
+				else if (Prefix == 87)
+				{
+					First_Name = "Easton";
+					bad = false;
+				}
+				else if (Prefix == 88)
+				{
+					First_Name = "Zachary";
+					bad = false;
+				}
+				else if (Prefix == 89)
+				{
+					First_Name = "Parker";
+					bad = false;
+				}
+				else if (Prefix == 90)
+				{
+					First_Name = "Bryson";
+					bad = false;
+				}
+				else if (Prefix == 91)
+				{
+					First_Name = "Tyler";
+					bad = false;
+				}
+				else if (Prefix == 92)
+				{
+					First_Name = "Camden";
+					bad = false;
+				}
+				else if (Prefix == 93)
+				{
+					First_Name = "Damian";
+					bad = false;
+				}
+				else if (Prefix == 94)
+				{
+					First_Name = "Declan";
+					bad = false;
+				}
+				else if (Prefix == 95)
+				{
+					First_Name = "Elliot";
+					bad = false;
+				}
+				else if (Prefix == 96)
+				{
+					First_Name = "Elias";
+					bad = false;
+				}
+				else if (Prefix == 97)
+				{
+					First_Name = "Cole";
+					bad = false;
+				}
+				else if (Prefix == 98)
+				{
+					First_Name = "Harrison";
+					bad = false;
+				}
+				else if (Prefix == 99)
+				{
+					First_Name = "Zane";
+					bad = false;
+				}
+				else if (Prefix == 100)
+				{
+					First_Name = "Kai";
+					bad = false;
+				}
+			}
+
+			bad = true;
+		}
+		else
+		{
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix == 1)
+				{
+					First_Name = "Sophia";
+					bad = false;
+				}
+				else if (Prefix == 2)
+				{
+					First_Name = "Emma";
+					bad = false;
+				}
+				else if (Prefix == 3)
+				{
+					First_Name = "Olivia";
+					bad = false;
+				}
+				else if (Prefix == 4)
+				{
+					First_Name = "Ava";
+					bad = false;
+				}
+				else if (Prefix == 5)
+				{
+					First_Name = "Mia";
+					bad = false;
+				}
+				else if (Prefix == 6)
+				{
+					First_Name = "Isabella";
+					bad = false;
+				}
+				else if (Prefix == 7)
+				{
+					First_Name = "Riley";
+					bad = false;
+				}
+				else if (Prefix == 8)
+				{
+					First_Name = "Aria";
+					bad = false;
+				}
+				else if (Prefix == 9)
+				{
+					First_Name = "Zoe";
+					bad = false;
+				}
+				else if (Prefix == 10)
+				{
+					First_Name = "Charlotte";
+					bad = false;
+				}
+				else if (Prefix == 11)
+				{
+					First_Name = "Lily";
+					bad = false;
+				}
+				else if (Prefix == 12)
+				{
+					First_Name = "Layla";
+					bad = false;
+				}
+				else if (Prefix == 13)
+				{
+					First_Name = "Amelia";
+					bad = false;
+				}
+				else if (Prefix == 14)
+				{
+					First_Name = "Emily";
+					bad = false;
+				}
+				else if (Prefix == 15)
+				{
+					First_Name = "Madelyn";
+					bad = false;
+				}
+				else if (Prefix == 16)
+				{
+					First_Name = "Aubrey";
+					bad = false;
+				}
+				else if (Prefix == 17)
+				{
+					First_Name = "Adalyn";
+					bad = false;
+				}
+				else if (Prefix == 18)
+				{
+					First_Name = "Madison";
+					bad = false;
+				}
+				else if (Prefix == 19)
+				{
+					First_Name = "Chloe";
+					bad = false;
+				}
+				else if (Prefix == 20)
+				{
+					First_Name = "Harper";
+					bad = false;
+				}
+				else if (Prefix == 21)
+				{
+					First_Name = "Abigail";
+					bad = false;
+				}
+				else if (Prefix == 22)
+				{
+					First_Name = "Aaliyah";
+					bad = false;
+				}
+				else if (Prefix == 23)
+				{
+					First_Name = "Avery";
+					bad = false;
+				}
+				else if (Prefix == 24)
+				{
+					First_Name = "Evelyn";
+					bad = false;
+				}
+				else if (Prefix == 25)
+				{
+					First_Name = "Kaylee";
+					bad = false;
+				}
+				else if (Prefix == 26)
+				{
+					First_Name = "Ella";
+					bad = false;
+				}
+				else if (Prefix == 27)
+				{
+					First_Name = "Ellie";
+					bad = false;
+				}
+				else if (Prefix == 28)
+				{
+					First_Name = "Scarlett";
+					bad = false;
+				}
+				else if (Prefix == 29)
+				{
+					First_Name = "Arianna";
+					bad = false;
+				}
+				else if (Prefix == 30)
+				{
+					First_Name = "Hailey";
+					bad = false;
+				}
+				else if (Prefix == 31)
+				{
+					First_Name = "Nora";
+					bad = false;
+				}
+				else if (Prefix == 32)
+				{
+					First_Name = "Addison";
+					bad = false;
+				}
+				else if (Prefix == 33)
+				{
+					First_Name = "Brooklyn";
+					bad = false;
+				}
+				else if (Prefix == 34)
+				{
+					First_Name = "Hannah";
+					bad = false;
+				}
+				else if (Prefix == 35)
+				{
+					First_Name = "Mila";
+					bad = false;
+				}
+				else if (Prefix == 36)
+				{
+					First_Name = "Leah";
+					bad = false;
+				}
+				else if (Prefix == 37)
+				{
+					First_Name = "Elizabeth";
+					bad = false;
+				}
+				else if (Prefix == 38)
+				{
+					First_Name = "Sarah";
+					bad = false;
+				}
+				else if (Prefix == 39)
+				{
+					First_Name = "Eliana";
+					bad = false;
+				}
+				else if (Prefix == 40)
+				{
+					First_Name = "Mackenzie";
+					bad = false;
+				}
+				else if (Prefix == 41)
+				{
+					First_Name = "Peyton";
+					bad = false;
+				}
+				else if (Prefix == 42)
+				{
+					First_Name = "Maria";
+					bad = false;
+				}
+				else if (Prefix == 43)
+				{
+					First_Name = "Grace";
+					bad = false;
+				}
+				else if (Prefix == 44)
+				{
+					First_Name = "Adeline";
+					bad = false;
+				}
+				else if (Prefix == 45)
+				{
+					First_Name = "Elena";
+					bad = false;
+				}
+				else if (Prefix == 46)
+				{
+					First_Name = "Anna";
+					bad = false;
+				}
+				else if (Prefix == 47)
+				{
+					First_Name = "Victoria";
+					bad = false;
+				}
+				else if (Prefix == 48)
+				{
+					First_Name = "Camilla";
+					bad = false;
+				}
+				else if (Prefix == 49)
+				{
+					First_Name = "Lillian";
+					bad = false;
+				}
+				else if (Prefix == 50)
+				{
+					First_Name = "Natalie";
+					bad = false;
+				}
+				else if (Prefix == 51)
+				{
+					First_Name = "Isabelle";
+					bad = false;
+				}
+				else if (Prefix == 52)
+				{
+					First_Name = "Skyler";
+					bad = false;
+				}
+				else if (Prefix == 53)
+				{
+					First_Name = "Maya";
+					bad = false;
+				}
+				else if (Prefix == 54)
+				{
+					First_Name = "Lucy";
+					bad = false;
+				}
+				else if (Prefix == 55)
+				{
+					First_Name = "Lila";
+					bad = false;
+				}
+				else if (Prefix == 56)
+				{
+					First_Name = "Audrey";
+					bad = false;
+				}
+				else if (Prefix == 57)
+				{
+					First_Name = "Makayla";
+					bad = false;
+				}
+				else if (Prefix == 58)
+				{
+					First_Name = "Penelope";
+					bad = false;
+				}
+				else if (Prefix == 59)
+				{
+					First_Name = "Claire";
+					bad = false;
+				}
+				else if (Prefix == 60)
+				{
+					First_Name = "Kennedy";
+					bad = false;
+				}
+				else if (Prefix == 61)
+				{
+					First_Name = "Paisley";
+					bad = false;
+				}
+				else if (Prefix == 62)
+				{
+					First_Name = "Savannah";
+					bad = false;
+				}
+				else if (Prefix == 63)
+				{
+					First_Name = "Alaina";
+					bad = false;
+				}
+				else if (Prefix == 64)
+				{
+					First_Name = "Gabriella";
+					bad = false;
+				}
+				else if (Prefix == 65)
+				{
+					First_Name = "Violet";
+					bad = false;
+				}
+				else if (Prefix == 66)
+				{
+					First_Name = "Kylie";
+					bad = false;
+				}
+				else if (Prefix == 67)
+				{
+					First_Name = "Charlie";
+					bad = false;
+				}
+				else if (Prefix == 68)
+				{
+					First_Name = "Stella";
+					bad = false;
+				}
+				else if (Prefix == 69)
+				{
+					First_Name = "Allison";
+					bad = false;
+				}
+				else if (Prefix == 70)
+				{
+					First_Name = "Liliana";
+					bad = false;
+				}
+				else if (Prefix == 71)
+				{
+					First_Name = "Eva";
+					bad = false;
+				}
+				else if (Prefix == 72)
+				{
+					First_Name = "Callie";
+					bad = false;
+				}
+				else if (Prefix == 73)
+				{
+					First_Name = "Kinsley";
+					bad = false;
+				}
+				else if (Prefix == 74)
+				{
+					First_Name = "Reagan";
+					bad = false;
+				}
+				else if (Prefix == 75)
+				{
+					First_Name = "Sophie";
+					bad = false;
+				}
+				else if (Prefix == 76)
+				{
+					First_Name = "Alyssa";
+					bad = false;
+				}
+				else if (Prefix == 77)
+				{
+					First_Name = "Alice";
+					bad = false;
+				}
+				else if (Prefix == 78)
+				{
+					First_Name = "Caroline";
+					bad = false;
+				}
+				else if (Prefix == 79)
+				{
+					First_Name = "Aurora";
+					bad = false;
+				}
+				else if (Prefix == 80)
+				{
+					First_Name = "Eleanor";
+					bad = false;
+				}
+				else if (Prefix == 81)
+				{
+					First_Name = "Juliana";
+					bad = false;
+				}
+				else if (Prefix == 82)
+				{
+					First_Name = "Annabelle";
+					bad = false;
+				}
+				else if (Prefix == 83)
+				{
+					First_Name = "Emilia";
+					bad = false;
+				}
+				else if (Prefix == 84)
+				{
+					First_Name = "Sadie";
+					bad = false;
+				}
+				else if (Prefix == 85)
+				{
+					First_Name = "Bella";
+					bad = false;
+				}
+				else if (Prefix == 86)
+				{
+					First_Name = "Julia";
+					bad = false;
+				}
+				else if (Prefix == 87)
+				{
+					First_Name = "Keira";
+					bad = false;
+				}
+				else if (Prefix == 88)
+				{
+					First_Name = "Bailey";
+					bad = false;
+				}
+				else if (Prefix == 89)
+				{
+					First_Name = "Hazel";
+					bad = false;
+				}
+				else if (Prefix == 90)
+				{
+					First_Name = "Jocelyn";
+					bad = false;
+				}
+				else if (Prefix == 91)
+				{
+					First_Name = "Monika";
+					bad = false;
+				}
+				else if (Prefix == 92)
+				{
+					First_Name = "Samantha";
+					bad = false;
+				}
+				else if (Prefix == 93)
+				{
+					First_Name = "Vivian";
+					bad = false;
+				}
+				else if (Prefix == 94)
+				{
+					First_Name = "Gianna";
+					bad = false;
+				}
+				else if (Prefix == 95)
+				{
+					First_Name = "Alexandra";
+					bad = false;
+				}
+				else if (Prefix == 96)
+				{
+					First_Name = "Cora";
+					bad = false;
+				}
+				else if (Prefix == 97)
+				{
+					First_Name = "Melanie";
+					bad = false;
+				}
+				else if (Prefix == 98)
+				{
+					First_Name = "Everly";
+					bad = false;
+				}
+				else if (Prefix == 99)
+				{
+					First_Name = "Jordyn";
+					bad = false;
+				}
+				else if (Prefix == 100)
+				{
+					First_Name = "Luna";
+					bad = false;
+				}
+			}
+
+			bad = true;
+		}
+
+		Prefix = (rand() % 49) + 1;
+
+		while (bad == true)
+		{
+			//Prefix Generation for First Name
+			if (Prefix == 1)
+			{
+				Last_Name = "Euling";
+				bad = false;
+			}
+			else if (Prefix == 2)
+			{
+				Last_Name = "Buchan";
+				bad = false;
+			}
+			else if (Prefix == 3)
+			{
+				Last_Name = "Silvera";
+				bad = false;
+			}
+			else if (Prefix == 4)
+			{
+				Last_Name = "Erickson";
+				bad = false;
+			}
+			else if (Prefix == 5)
+			{
+				Last_Name = "Frenkel";
+				bad = false;
+			}
+			else if (Prefix == 6)
+			{
+				Last_Name = "Mcleish";
+				bad = false;
+			}
+			else if (Prefix == 7)
+			{
+				Last_Name = "Saville";
+				bad = false;
+			}
+			else if (Prefix == 8)
+			{
+				Last_Name = "Thurston";
+				bad = false;
+			}
+			else if (Prefix == 9)
+			{
+				Last_Name = "Spiring";
+				bad = false;
+			}
+			else if (Prefix == 10)
+			{
+				Last_Name = "Kaxiras";
+				bad = false;
+			}
+			else if (Prefix == 11)
+			{
+				Last_Name = "Khalsa";
+				bad = false;
+			}
+			else if (Prefix == 12)
+			{
+				Last_Name = "Dutschke";
+				bad = false;
+			}
+			else if (Prefix == 13)
+			{
+				Last_Name = "Vitale";
+				bad = false;
+			}
+			else if (Prefix == 14)
+			{
+				Last_Name = "Freedberg";
+				bad = false;
+			}
+			else if (Prefix == 15)
+			{
+				Last_Name = "Tribble";
+				bad = false;
+			}
+			else if (Prefix == 16)
+			{
+				Last_Name = "Eck";
+				bad = false;
+			}
+			else if (Prefix == 17)
+			{
+				Last_Name = "Koegel";
+				bad = false;
+			}
+			else if (Prefix == 18)
+			{
+				Last_Name = "Grolnic";
+				bad = false;
+			}
+			else if (Prefix == 19)
+			{
+				Last_Name = "Trento";
+				bad = false;
+			}
+			else if (Prefix == 20)
+			{
+				Last_Name = "Heil";
+				bad = false;
+			}
+			else if (Prefix == 21)
+			{
+				Last_Name = "Terzi";
+				bad = false;
+			}
+			else if (Prefix == 22)
+			{
+				Last_Name = "Samaranayake";
+				bad = false;
+			}
+			else if (Prefix == 23)
+			{
+				Last_Name = "Gaetz";
+				bad = false;
+			}
+			else if (Prefix == 24)
+			{
+				Last_Name = "Mcmahon";
+				bad = false;
+			}
+			else if (Prefix == 25)
+			{
+				Last_Name = "Shinagel";
+				bad = false;
+			}
+			else if (Prefix == 26)
+			{
+				Last_Name = "Jackson";
+				bad = false;
+			}
+			else if (Prefix == 27)
+			{
+				Last_Name = "Menashi";
+				bad = false;
+			}
+			else if (Prefix == 28)
+			{
+				Last_Name = "Schantz";
+				bad = false;
+			}
+			else if (Prefix == 29)
+			{
+				Last_Name = "Dethridge";
+				bad = false;
+			}
+			else if (Prefix == 30)
+			{
+				Last_Name = "Sheffield";
+				bad = false;
+			}
+			else if (Prefix == 31)
+			{
+				Last_Name = "Luppi";
+				bad = false;
+			}
+			else if (Prefix == 32)
+			{
+				Last_Name = "Franconi";
+				bad = false;
+			}
+			else if (Prefix == 33)
+			{
+				Last_Name = "Wadleigh";
+				bad = false;
+			}
+			else if (Prefix == 34)
+			{
+				Last_Name = "Stevens";
+				bad = false;
+			}
+			else if (Prefix == 35)
+			{
+				Last_Name = "Alexander";
+				bad = false;
+			}
+			else if (Prefix == 36)
+			{
+				Last_Name = "Carson";
+				bad = false;
+			}
+			else if (Prefix == 37)
+			{
+				Last_Name = "Carpenter";
+				bad = false;
+			}
+			else if (Prefix == 38)
+			{
+				Last_Name = "Gilbert";
+				bad = false;
+			}
+			else if (Prefix == 39)
+			{
+				Last_Name = "Eby";
+				bad = false;
+			}
+			else if (Prefix == 40)
+			{
+				Last_Name = "Sealock";
+				bad = false;
+			}
+			else if (Prefix == 41)
+			{
+				Last_Name = "Ceriale";
+				bad = false;
+			}
+			else if (Prefix == 42)
+			{
+				Last_Name = "Zoeller";
+				bad = false;
+			}
+			else if (Prefix == 43)
+			{
+				Last_Name = "Masson";
+				bad = false;
+			}
+			else if (Prefix == 44)
+			{
+				Last_Name = "Benson";
+				bad = false;
+			}
+			else if (Prefix == 45)
+			{
+				Last_Name = "Williams";
+				bad = false;
+			}
+			else if (Prefix == 46)
+			{
+				Last_Name = "Davis";
+				bad = false;
+			}
+			else if (Prefix == 47)
+			{
+				Last_Name = "Hunt";
+				bad = false;
+			}
+			else if (Prefix == 48)
+			{
+				Last_Name = "Daniels";
+				bad = false;
+			}
+			else if (Prefix == 49)
+			{
+				Last_Name = "Breschi";
+				bad = false;
+			}
+			else if (Prefix == 50)
+			{
+				Last_Name = "Rybalov";
+				bad = false;
+			}
+		}
+
+		bad = true;
+
+		Full_Name = First_Name + " " + Last_Name;
+
+		return Full_Name;
 
 	}
-	else if (race == "Elf")
+	else if (race == "Elf") //Done
 	{
 		if (Name_Choice >= 1 && Name_Choice <= 40)
 		{
@@ -8767,7 +10048,1914 @@ string NPCs::Random_Name(string race, int gender)
 	}
 	else if (race == "Gnome")
 	{
+		if (Name_Choice >= 1 && Name_Choice <= 40)
+		{
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
 
+			bad = true;
+
+			Full_Name = First_Name;
+		}
+		else if (Name_Choice >= 41 && Name_Choice <= 70)
+		{
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Prefix = (rand() % Dice_Max) + 1;
+
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Full_Name = First_Name;
+		}
+		else if (Name_Choice >= 71 && Name_Choice <= 90)
+		{
+			while(bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Prefix = (rand() % Dice_Max) + 1;
+
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Prefix = (rand() % Dice_Max) + 1;
+
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					Last_Name += "Ale";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 4)
+				{
+					Last_Name += "Ash";
+					bad = false;
+				}
+				else if (Prefix >= 5 && Prefix <= 7)
+				{
+					Last_Name += "Badger";
+					bad = false;
+				}
+				else if (Prefix >= 8 && Prefix <= 9)
+				{
+					Last_Name += "Bones";
+					bad = false;
+				}
+				else if (Prefix >= 10 && Prefix <= 11)
+				{
+					Last_Name += "Caller";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					Last_Name += "Cloak";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					Last_Name += "Drinker";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					Last_Name += "Earth";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 21)
+				{
+					Last_Name += "Eye";
+					bad = false;
+				}
+				else if (Prefix >= 22 && Prefix <= 24)
+				{
+					Last_Name += "Fast";
+					bad = false;
+				}
+				else if (Prefix >= 25 && Prefix <= 26)
+				{
+					Last_Name += "Foot";
+					bad = false;
+				}
+				else if (Prefix >= 27 && Prefix <= 28)
+				{
+					Last_Name += "Fox";
+					bad = false;
+				}
+				else if (Prefix >= 29 && Prefix <= 31)
+				{
+					Last_Name += "Gem";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					Last_Name += "Glitter";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 37)
+				{
+					Last_Name += "Gold";
+					bad = false;
+				}
+				else if (Prefix >= 38 && Prefix <= 39)
+				{
+					Last_Name += "Hand";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					Last_Name += "Heart";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					Last_Name += "Hill";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					Last_Name += "Honor";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					Last_Name += "Iron";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 50)
+				{
+					Last_Name += "Laughing";
+					bad = false;
+				}
+				else if (Prefix >= 51 && Prefix <= 53)
+				{
+					Last_Name += "Lightning";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 55)
+				{
+					Last_Name += "Little";
+					bad = false;
+				}
+				else if (Prefix >= 56 && Prefix <= 57)
+				{
+					Last_Name += "Lock";
+					bad = false;
+				}
+				else if (Prefix >= 58 && Prefix <= 59)
+				{
+					if (Gender == "Male")
+					{
+						Last_Name += "Man";
+					}
+					else
+					{
+						Last_Name += "Lady";
+					}
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					Last_Name += "Moon";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					Last_Name += "Phantom";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 67)
+				{
+					Last_Name += "Shadow";
+					bad = false;
+				}
+				else if (Prefix >= 68 && Prefix <= 70)
+				{
+					Last_Name += "Silver";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					Last_Name += "Skin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					Last_Name += "Slosh";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					Last_Name += "Sly";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					Last_Name += "Sparkle";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 80)
+				{
+					Last_Name += "Steel";
+					bad = false;
+				}
+				else if (Prefix >= 81 && Prefix <= 82)
+				{
+					Last_Name += "Stone";
+					bad = false;
+				}
+				else if (Prefix >= 83 && Prefix <= 85)
+				{
+					Last_Name += "Strider";
+					bad = false;
+				}
+				else if (Prefix >= 86 && Prefix <= 87)
+				{
+					Last_Name += "Stumble";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 89)
+				{
+					Last_Name += "Sun";
+					bad = false;
+				}
+				else if (Prefix >= 90 && Prefix <= 92)
+				{
+					Last_Name += "Swift";
+					bad = false;
+				}
+				else if (Prefix >= 93 && Prefix <= 95)
+				{
+					Last_Name += "Wanderer";
+					bad = false;
+				}
+				else if (Prefix >= 96 && Prefix <= 98)
+				{
+					Last_Name += "Whisper";
+					bad = false;
+				}
+				else if (Prefix >= 99 && Prefix <= 100)
+				{
+					Last_Name += "Wild";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Full_Name = First_Name + " " + Last_Name;
+		}
+		else
+		{
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Prefix = (rand() % Dice_Max) + 1;
+
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Prefix = (rand() % Dice_Max) + 1;
+
+			while (bad == true)
+			{
+				//Prefix Generation for First Name
+				if (Prefix >= 1 && Prefix <= 2)
+				{
+					First_Name += "Add";
+					bad = false;
+				}
+				else if (Prefix >= 3 && Prefix <= 5)
+				{
+					First_Name += "Arum";
+					bad = false;
+				}
+				else if (Prefix >= 6 && Prefix <= 8)
+				{
+					First_Name += "Baer";
+					bad = false;
+				}
+				else if (Prefix >= 9 && Prefix <= 11)
+				{
+					First_Name += "Bar";
+					bad = false;
+				}
+				else if (Prefix >= 12 && Prefix <= 14)
+				{
+					First_Name += "Callad";
+					bad = false;
+				}
+				else if (Prefix >= 15 && Prefix <= 16)
+				{
+					First_Name += "Chik";
+					bad = false;
+				}
+				else if (Prefix >= 17 && Prefix <= 19)
+				{
+					First_Name += "Dal";
+					bad = false;
+				}
+				else if (Prefix >= 20 && Prefix <= 22)
+				{
+					First_Name += "Din";
+					bad = false;
+				}
+				else if (Prefix >= 23 && Prefix <= 25)
+				{
+					First_Name += "Eaus";
+					bad = false;
+				}
+				else if (Prefix >= 26 && Prefix <= 27)
+				{
+					First_Name += "Enn";
+					bad = false;
+				}
+				else if (Prefix >= 28 && Prefix <= 29)
+				{
+					First_Name += "Erf";
+					bad = false;
+				}
+				else if (Prefix >= 30 && Prefix <= 31)
+				{
+					First_Name += "Faer";
+					bad = false;
+				}
+				else if (Prefix >= 32 && Prefix <= 34)
+				{
+					First_Name += "Fen";
+					bad = false;
+				}
+				else if (Prefix >= 35 && Prefix <= 36)
+				{
+					First_Name += "Flan";
+					bad = false;
+				}
+				else if (Prefix >= 37 && Prefix <= 39)
+				{
+					First_Name += "Gaer";
+					bad = false;
+				}
+				else if (Prefix >= 40 && Prefix <= 42)
+				{
+					First_Name += "Gar";
+					bad = false;
+				}
+				else if (Prefix >= 43 && Prefix <= 44)
+				{
+					First_Name += "Hed";
+					bad = false;
+				}
+				else if (Prefix >= 45 && Prefix <= 46)
+				{
+					First_Name += "Herl";
+					bad = false;
+				}
+				else if (Prefix >= 47 && Prefix <= 48)
+				{
+					First_Name += "Ien";
+					bad = false;
+				}
+				else if (Prefix >= 49 && Prefix <= 51)
+				{
+					First_Name += "Jan";
+					bad = false;
+				}
+				else if (Prefix >= 52 && Prefix <= 53)
+				{
+					First_Name += "Kaer";
+					bad = false;
+				}
+				else if (Prefix >= 54 && Prefix <= 56)
+				{
+					First_Name += "Len";
+					bad = false;
+				}
+				else if (Prefix >= 57 && Prefix <= 59)
+				{
+					First_Name += "Lun";
+					bad = false;
+				}
+				else if (Prefix >= 60 && Prefix <= 61)
+				{
+					First_Name += "Mikk";
+					bad = false;
+				}
+				else if (Prefix >= 62 && Prefix <= 64)
+				{
+					First_Name += "Neb";
+					bad = false;
+				}
+				else if (Prefix >= 65 && Prefix <= 66)
+				{
+					First_Name += "Oaen";
+					bad = false;
+				}
+				else if (Prefix >= 67 && Prefix <= 68)
+				{
+					First_Name += "Ow";
+					bad = false;
+				}
+				else if (Prefix >= 69 && Prefix <= 70)
+				{
+					First_Name += "Pall";
+					bad = false;
+				}
+				else if (Prefix >= 71 && Prefix <= 72)
+				{
+					First_Name += "Pin";
+					bad = false;
+				}
+				else if (Prefix >= 73 && Prefix <= 74)
+				{
+					First_Name += "Raer";
+					bad = false;
+				}
+				else if (Prefix >= 75 && Prefix <= 76)
+				{
+					First_Name += "Ras";
+					bad = false;
+				}
+				else if (Prefix >= 77 && Prefix <= 78)
+				{
+					First_Name += "Seg";
+					bad = false;
+				}
+				else if (Prefix >= 79 && Prefix <= 81)
+				{
+					First_Name += "Skor";
+					bad = false;
+				}
+				else if (Prefix >= 82 && Prefix <= 84)
+				{
+					First_Name += "Tikk";
+					bad = false;
+				}
+				else if (Prefix >= 85 && Prefix <= 87)
+				{
+					First_Name += "Uran";
+					bad = false;
+				}
+				else if (Prefix >= 88 && Prefix <= 90)
+				{
+					First_Name += "Urd";
+					bad = false;
+				}
+				else if (Prefix >= 91 && Prefix <= 93)
+				{
+					First_Name += "Van";
+					bad = false;
+				}
+				else if (Prefix >= 94 && Prefix <= 96)
+				{
+					First_Name += "Var";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wann";
+					bad = false;
+				}
+				else if (Prefix >= 97 && Prefix <= 98)
+				{
+					First_Name += "Wed";
+					bad = false;
+				}
+			}
+
+			bad = true;
+
+			Full_Name = First_Name;
+		}
+
+		return Full_Name;
 	}
 	else if (race == "Halfling")
 	{
