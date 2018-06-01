@@ -37,6 +37,7 @@ int main()
 		cout << "Enter 5 for Random Shop Names." << endl;
 		cout << "Enter 6 for Random People Names." << endl;
 		cout << "Enter 7 for a Battle Tracker." << endl;
+		cout << "Enter 8 for the Bank of Emon Server" << endl;
 		cout << "Enter -999 to end the program." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -68,6 +69,12 @@ int main()
 		else if (Input == "7")
 		{
 			Battle_Tracker();
+		}
+		else if (Input == "8")
+		{
+			Bank_of_Emon bank;
+
+			bank.Welcome();
 		}
 		else if (Input == "-999")
 		{
@@ -388,6 +395,15 @@ void Random_Person()
 				else if (Input == "3")
 				{
 					name = npc.Random_Name("Half-Elf", 3);
+
+					if (name == "Human")
+					{
+						name = npc.Random_Name("Human", 3);
+					}
+					else
+					{
+						name = npc.Random_Name("Elf", 3);
+					}
 					cout << "Their name is " << name << "." << endl << endl;
 					system("pause");
 				}
@@ -412,6 +428,16 @@ void Random_Person()
 				else if (Input == "7")
 				{
 					name = npc.Random_Name("Half-Orc", 3);
+
+					if (name == "Human")
+					{
+						name = npc.Random_Name("Human", 3);
+					}
+					else
+					{
+						name = npc.Random_Name("Orc", 3);
+					}
+
 					cout << "Their name is " << name << "." << endl << endl;
 					system("pause");
 				}

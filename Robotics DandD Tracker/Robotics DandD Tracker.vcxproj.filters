@@ -23,6 +23,10 @@
     <Text Include="Battle.txt" />
     <Text Include="TempNPC.txt" />
     <Text Include="NPCs.txt" />
+    <Text Include="Storm_Money.txt" />
+    <Text Include="Gondola_Money.txt" />
+    <Text Include="Zand_Money.txt" />
+    <Text Include="tempMoney.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -67,6 +71,9 @@
     <ClInclude Include="NPCs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Bank_of_Emon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -103,6 +110,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NPCs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bank_of_Emon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

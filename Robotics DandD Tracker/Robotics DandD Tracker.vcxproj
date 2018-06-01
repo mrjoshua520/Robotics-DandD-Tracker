@@ -146,14 +146,19 @@
   <ItemGroup>
     <Text Include="Battle.txt" />
     <Text Include="Characters.txt" />
+    <Text Include="Gondola_Money.txt" />
     <Text Include="Monsters.txt" />
     <Text Include="NPCs.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="Storm_Money.txt" />
     <Text Include="temp.txt" />
     <Text Include="tempMon.txt" />
+    <Text Include="tempMoney.txt" />
     <Text Include="TempNPC.txt" />
+    <Text Include="Zand_Money.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bank_of_Emon.h" />
     <ClInclude Include="Battle_Track.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="DandD.h" />
@@ -170,6 +175,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bank_of_Emon.cpp" />
     <ClCompile Include="Battle_Track.cpp" />
     <ClCompile Include="Containers.cpp" />
     <ClCompile Include="Dollar.cpp" />

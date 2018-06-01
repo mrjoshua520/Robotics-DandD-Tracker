@@ -10035,11 +10035,11 @@ string NPCs::Random_Name(string race, int gender)
 	{
 		if (Half_Race <= 50)
 		{
-			Random_Name("Human", 3);
+			return "Human";
 		}
 		else
 		{
-			Random_Name("Elf", 3);
+			return "Elf";
 		}
 	}
 	else if (race == "Dwarf")
@@ -14918,11 +14918,11 @@ string NPCs::Random_Name(string race, int gender)
 	{
 		if (Half_Race <= 50)
 		{
-			Random_Name("Human", 3);
+			return "Human";
 		}
 		else
 		{
-			Random_Name("Orc", 3);
+			return "Orc";
 		}
 	}
 	else if (race == "Tiefling")
