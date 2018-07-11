@@ -90,7 +90,7 @@ void Bank_of_Emon::access(string user)
 	}
 	else if (user == "Gonfrad")
 	{
-		pinNum = 4395;
+		pinNum = 2013;
 
 		while (badinput)
 		{
@@ -237,7 +237,7 @@ void Bank_of_Emon::Account_Info(int pin)
 		{
 			system("cls");
 			cout << "Name on account: Gonfrad Gondola" << endl;
-			cout << "Date of Birth: MONTHHERE DAYHERE, YEARHEREPD" << endl;
+			cout << "Date of Birth: Quen'pillar 1st, 765PD" << endl;
 			cout << endl << "Balance: " << gold << " gold pieces." << endl << endl;
 			system("pause");
 			cout << endl << endl;

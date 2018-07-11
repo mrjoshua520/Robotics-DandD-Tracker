@@ -1,3 +1,4 @@
-Storm,Arianna,Paladin,Gnome,Chaotic Neutral,16,3,11,0,14,2,14,2,14,2,16,3,13,25,0,31,12,1218,3
-Zanderian,Vince,Sorcerer,Human,Chaotic Neutral,9,0,16,3,14,2,13,1,13,1,18,4,16,30,3,21,11,1218,3
-Gonfrad,Ethan,Rogue/Engineer,Halfling,Chaotic Neutral,10,0,20,5,13,1,16,3,13,1,16,3,16,25,5,21,11,1218,3
+Storm,Arianna,Paladin of Vengance,Forest Gnome,Chaotic Neutral,16,3,11,0,14,2,14,2,14,2,16,3,13,25,0,57,12,7700,5
+Zanderian,Vince,Dragonblood Sorcerer,Variant Human,Chaotic Neutral,9,0,16,3,14,2,13,1,13,1,25,7,16,30,3,34,11,7700,5
+Gonfrad,Joshua,Rogue/Engineer,Lightfoot Halfling,Chaotic Neutal,10,0,20,5,13,1,16,3,13,1,16,3,16,25,5,31,11,7700,5
+Johnrick,Cody,Warlock,Half-elf,Chaotic Good,10,0,20,5,14,2,10,0,12,1,20,5,15,30,5,40,11,7700,5
