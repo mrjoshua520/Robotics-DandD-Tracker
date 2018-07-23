@@ -154,7 +154,7 @@ void Players::View_Characters()
 
 	for (Players play : player)
 	{
-		cout << "Character Name: " << play.charName << "       Played by: " << play.playerName << endl;
+		cout << "Character Name: " << play.charName << endl;
 	}
 	cout << "Selection: ";
 	getline(cin, Input);
@@ -1564,6 +1564,8 @@ void Players::Store_Battle()
 		output << batt.InitStats.Mini_Used << ",";
 		output << batt.InitStats.DST_Passes << ",";
 		output << batt.InitStats.DST_Fails << ",";
-		output << batt.InitStats.dead << endl;
+		output << batt.InitStats.dead << ",";
+		output << batt.InitStats.Lair << "NO" << ",";
+		output << batt.InitStats.LairType << "NA" << endl;
 	}
 }

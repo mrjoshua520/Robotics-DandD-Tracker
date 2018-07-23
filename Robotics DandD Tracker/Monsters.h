@@ -20,6 +20,8 @@ private:
 	string type;
 	string size;
 	string Alignment;
+	string Lair;
+	string LairType;
 	double challengeRating;
 	int strScore;
 	int dexScore;

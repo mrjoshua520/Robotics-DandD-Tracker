@@ -26,6 +26,8 @@ private:
 		int DST_Fails;
 		int DST_Passes;
 		bool dead = false;
+		string Lair;
+		string LairType;
 	};
 
 public:
@@ -41,6 +43,7 @@ public:
 	void Vect_Ini_Sort();
 	void Battle_System();
 	void Display_List();
+	void Lair_Types(string);
 	void Battle_End();
 	double EXP_Calc(double);
 };

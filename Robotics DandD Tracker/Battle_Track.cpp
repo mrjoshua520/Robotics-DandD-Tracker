@@ -101,6 +101,18 @@ void Battle_Track::Vect_SetUp()
 			comma = name.find(',');
 			battleVect[count].InitStats.DST_Fails = stoi(name.substr(0, comma));
 			name = name.substr(comma + 1);
+
+			comma = name.find(',');
+			battleVect[count].InitStats.dead = stoi(name.substr(0, comma));
+			name = name.substr(comma + 1);
+
+			comma = name.find(',');
+			battleVect[count].InitStats.Lair = name.substr(0, comma);
+			name = name.substr(comma + 1);
+
+			comma = name.find(',');
+			battleVect[count].InitStats.LairType = name.substr(0, comma);
+			name = name.substr(comma + 1);
 		}
 	}
 }
@@ -116,12 +128,19 @@ void Battle_Track::Init_Roll()
 	{
 		system("cls");
 
-		cout << "What is the initiative roll for " << bat.InitStats.Name << " using this mini: " << bat.InitStats.Mini_Used << "." << endl;
-		cout << "Roll: ";
-		cin >> init_roll;
+		if (bat.InitStats.Name == "LAIR ACTION")
+		{
+			battleVect[i].InitStats.Initiative = 20;
+		}
+		else
+		{
 
-		battleVect[i].InitStats.Initiative = init_roll;
+			cout << "What is the initiative roll for " << bat.InitStats.Name << " using this mini: " << bat.InitStats.Mini_Used << "." << endl;
+			cout << "Roll: ";
+			cin >> init_roll;
 
+			battleVect[i].InitStats.Initiative = init_roll;
+		}
 		i++;
 	}
 }
@@ -293,19 +312,28 @@ void Battle_Track::Battle_System()
 				Display_List();
 				cout << endl << endl << "Round " << round;
 				cout << endl << endl << endl;
-				cout << "========CURRENT PLAYER========" << endl;
-				cout << "Name:               " << battleVect[j - 1].InitStats.Name << endl;
-				cout << "Mini Used           " << battleVect[j - 1].InitStats.Mini_Used << endl;
-				cout << "Armor Class:        " << battleVect[j - 1].InitStats.Armor_Class << endl;
-				cout << "Initiative:         " << battleVect[j - 1].InitStats.Initiative << endl;
-				cout << "Speed:              " << battleVect[j - 1].InitStats.Speed << endl;
-				cout << "Passive Perception: " << battleVect[j - 1].InitStats.Passive_Perception << endl;
-				cout << "Total Health:       " << battleVect[j - 1].InitStats.Total_Health << endl;
-				cout << "Current Health:     " << battleVect[j - 1].InitStats.Current_Health << endl << endl;
 
-				if (battleVect[j - 1].InitStats.Name == "Zanderian")
+				if (battleVect[j - 1].InitStats.Name == "LAIR ACTION")
 				{
-					cout << "Chaos Bolt Damage type is " << misc.Chaos_Bolt() << "." << endl << endl;
+					cout << "==========LAIR ACTION==========" << endl;
+					Lair_Types(battleVect[j - 1].InitStats.LairType);
+				}
+				else
+				{
+					cout << "========CURRENT PLAYER========" << endl;
+					cout << "Name:               " << battleVect[j - 1].InitStats.Name << endl;
+					cout << "Mini Used           " << battleVect[j - 1].InitStats.Mini_Used << endl;
+					cout << "Armor Class:        " << battleVect[j - 1].InitStats.Armor_Class << endl;
+					cout << "Initiative:         " << battleVect[j - 1].InitStats.Initiative << endl;
+					cout << "Speed:              " << battleVect[j - 1].InitStats.Speed << endl;
+					cout << "Passive Perception: " << battleVect[j - 1].InitStats.Passive_Perception << endl;
+					cout << "Total Health:       " << battleVect[j - 1].InitStats.Total_Health << endl;
+					cout << "Current Health:     " << battleVect[j - 1].InitStats.Current_Health << endl << endl;
+
+					if (battleVect[j - 1].InitStats.Name == "Zanderian")
+					{
+						cout << "Chaos Bolt Damage type is " << misc.Chaos_Bolt() << "." << endl << endl;
+					}
 				}
 			}
 
@@ -318,20 +346,28 @@ void Battle_Track::Battle_System()
 			{
 				system("cls");
 				Display_List();
-				cout << endl << "Did " << battleVect[j - 1].InitStats.Name << " take any damage this turn? Y/N (Type in a negative to heal) ";
-				cin >> damage;
 
-				if (damage == 'Y' || damage == 'y')
+				if (battleVect[j - 1].InitStats.Name == "LAIR ACTION")
 				{
-					cout << endl << endl;
-					cout << "How much damage? ";
-					cin >> hpLoss;
 
-					battleVect[j - 1].InitStats.Current_Health -= hpLoss;
 				}
 				else
 				{
+					cout << endl << "Did " << battleVect[j - 1].InitStats.Name << " take any damage this turn? Y/N (Type in a negative to heal) ";
+					cin >> damage;
 
+					if (damage == 'Y' || damage == 'y')
+					{
+						cout << endl << endl;
+						cout << "How much damage? ";
+						cin >> hpLoss;
+
+						battleVect[j - 1].InitStats.Current_Health -= hpLoss;
+					}
+					else
+					{
+
+					}
 				}
 			}
 		}
@@ -368,7 +404,47 @@ void Battle_Track::Display_List()
 
 	for (int j = number, i = 1; j > 0; i++, j--)
 	{
-		cout << "Number " << i << ": " << battleVect[j - 1].InitStats.Name << " has " << battleVect[j - 1].InitStats.Current_Health << " / " << battleVect[j - 1].InitStats.Total_Health << ". Initiative Score of " << battleVect[j - 1].InitStats.Initiative << ". Armor Class: " << battleVect[j - 1].InitStats.Armor_Class << "." << endl;
+		cout << "Number " << i << ": ";
+		if (battleVect[j - 1].InitStats.Name == "LAIR ACTION")
+		{
+			cout << battleVect[j - 1].InitStats.Name << endl;
+		}
+		else
+		{
+			cout << battleVect[j - 1].InitStats.Name << " has " << battleVect[j - 1].InitStats.Current_Health << " / " << battleVect[j - 1].InitStats.Total_Health << ". Initiative Score of " << battleVect[j - 1].InitStats.Initiative << ". Armor Class: " << battleVect[j - 1].InitStats.Armor_Class << "." << endl;
+		}
+	}
+}
+
+void Battle_Track::Lair_Types(string LT)
+{
+	if (LT == "Mummy Lord")
+	{
+		cout << "The passive effects of the Mummy Lord's Lair are as follows. These go away as soon as the mummy lord is defeated." << endl;
+		cout << "    ";
+		cout << "1. Food instantly molds and water instantly evaporates. Other non-magical liquid turns to vinegar." << endl << endl;
+		cout << "    ";
+		cout << "2. Divination Magic has a 25% higher chance to provide misleading resules as determined by the DM" << endl << endl;
+		cout << "    ";
+		cout << "3. A creature that takes treasure from the lair is cursed until the treasure is returned." << endl;
+		cout << "    ";
+		cout << "The cursed target has disadvantage on all saving throws. The curse lasts until removed by a remove curse spell or other magic." << endl << endl;
+		cout << "The active effects of the Mummy Lord's Lair are as follows. Choose one to use now. It cannot be the same as last time." << endl;
+		cout << "    ";
+		cout << "1. Sand Guardian - The swirling sands coalesces into the form of a guardian. This monster acts on the mummies turn and is treated as a sand elemental (My Notes). This lasts until it or the mummy is killed." << endl << endl;
+		cout << "    ";
+		cout << "2. Hidden Guardians - Any number of Undead creatures in the lair vanish into the floor, seemingly swallowed up by stone which turns to quicksand, then hardens instantly afterwards." << endl;
+		cout << "    ";
+		cout << "Such creatures are gone and cannot affect or be affected by anything until initiative count 20 of the next round, where they rejoin the battle anywhere within the lair." << endl << endl;
+		cout << "    ";
+		cout << "3. Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. " << endl;
+		cout << "    ";
+		cout << "The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell" << endl;
+		cout << "    has no effect and is wasted." << endl << endl;
+	}
+	else
+	{
+		cout << "Lair Type Not Available" << endl << endl;
 	}
 }
 

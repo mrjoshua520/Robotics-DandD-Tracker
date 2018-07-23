@@ -119,6 +119,14 @@ void Monsters::Read_Monster_File()
 				comma = name.find(',');
 				monster[count].challengeRating = stod(name.substr(0, comma));
 				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				monster[count].Lair = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				monster[count].LairType = name.substr(0, comma);
+				name = name.substr(comma + 1);
 			}
 		}
 		else
@@ -640,7 +648,36 @@ void Monsters::Add_Monster()
 				}
 				BadInput = false;
 			}
-			outputFileMon << Input;
+			outputFileMon << Input << ",";
+		}
+
+		BadInput = true;
+
+		while (BadInput)
+		{
+			string Input;
+			string Input2;
+			system("cls");
+			cout << "Does Monster " << (i + 1) << " have a lair? " << endl;
+			getline(cin, Input);
+
+			if (Input == "Yes" || Input == "Y" || Input == "yes" || Input == "y")
+			{
+				outputFileMon << "YES" << ",";
+
+				system("cls");
+				cout << "What type of Lair? " << endl;
+				getline(cin, Input2);
+
+				BadInput = false;
+				outputFileMon << Input2;
+			}
+			else
+			{
+				BadInput = false;
+				outputFileMon << "NO";
+				outputFileMon << "NA";
+			}
 		}
 
 		outputFileMon << "\n";
@@ -662,7 +699,7 @@ void Monsters::View_Monsters()
 
 	for (Monsters mon : monster)
 	{
-		cout << "Monster Name: " << mon.monName << "       Type of monster: " << mon.type << endl;
+		cout << "Monster Name: " << mon.monName << endl;
 	}
 	cout << "Selection: ";
 	getline(cin, Input);
@@ -734,6 +771,7 @@ void Monsters::Set_Battle_Vect(int num)
 	int i = 0;
 	ofstream output;
 	int I = 1;
+	string LT = "NA";
 
 	output.open("Battle.txt", ofstream::app);
 
@@ -808,7 +846,18 @@ void Monsters::Set_Battle_Vect(int num)
 				output << tempMon[i].mini << ",";
 				output << tempMon[i].pass << ",";
 				output << tempMon[i].fail << ",";
-				output << tempMon[i].dead << endl;
+				output << tempMon[i].dead << ",";
+				output << tempMon[i].Lair << ",";
+				output << tempMon[i].LairType << endl;
+
+				if (tempMon[i].Lair == "YES")
+				{
+					LT = tempMon[i].LairType;
+				}
+				else
+				{
+
+				}
 
 				i = 0;
 				count = 0;
@@ -816,6 +865,28 @@ void Monsters::Set_Battle_Vect(int num)
 				break;
 			}
 		}
+	}
+
+	if (LT == "NA")
+	{
+
+	}
+	else
+	{
+		output << "LAIR ACTION" << ",";
+		output << 9999 << ",";
+		output << 9999 << ",";
+		output << 20 << ",";
+		output << 9999 << ",";
+		output << 9999 << ",";
+		output << 9999 << ",";
+		output << 9999 << ",";
+		output << "NA" << ",";
+		output << 0 << ",";
+		output << 0 << ",";
+		output << false << ",";
+		output << "NO" << ",";
+		output << LT << endl;
 	}
 	output.close();
 }
@@ -928,6 +999,14 @@ void Monsters::Read_Monster_File_Battle()
 
 				comma = name.find(',');
 				tempMon[count].challengeRating = stoi(name.substr(0, comma));
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].Lair = name.substr(0, comma);
+				name = name.substr(comma + 1);
+
+				comma = name.find(',');
+				tempMon[count].LairType = name.substr(0, comma);
 				name = name.substr(comma + 1);
 			}
 		}

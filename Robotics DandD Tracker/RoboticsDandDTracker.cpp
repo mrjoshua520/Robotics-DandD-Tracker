@@ -38,6 +38,7 @@ int main()
 		cout << "Enter 6 for Random People Names." << endl;
 		cout << "Enter 7 for a Battle Tracker." << endl;
 		cout << "Enter 8 for the Bank of Emon Server" << endl;
+		//cout << "Enter 9 for the Apperatus of Kwalish" << endl;
 		cout << "Enter -999 to end the program." << endl;
 		cout << "Selection: ";
 		cin >> Input;
@@ -546,7 +547,6 @@ void Battle_Tracker()
 		battle.Vect_Ini_Sort();
 
 		battle.Battle_System();
-		//Ask for saving throw tracker when dead
 	}
 }
 //================================================================
