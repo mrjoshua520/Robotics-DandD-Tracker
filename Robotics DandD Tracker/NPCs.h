@@ -19,11 +19,10 @@ private:
 	string fileName = "NPCs.txt";
 	string Class;
 	string race;
-	string playerName;
 	string Alignment;
-	string Personality;
+	string Personality; 
 	string Voice;
-	string Job;
+	string Profession;
 	string Location;
 	int level;
 	int expPoints;

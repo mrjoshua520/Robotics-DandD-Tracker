@@ -1,2 +1,13 @@
-﻿  Robotics DandD Tracker.vcxproj -> C:\Users\joshu\source\repos\Robotics DandD Tracker\Debug\Robotics DandD Tracker.exe
-  Robotics DandD Tracker.vcxproj -> C:\Users\joshu\source\repos\Robotics DandD Tracker\Debug\Robotics DandD Tracker.pdb (Partial PDB)
+﻿  NPCs.cpp
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(37): error C2039: 'playerName': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(137): error C2039: 'Job': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(170): error C2039: 'playerName': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(181): error C2039: 'playerName': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(183): error C2039: 'Job': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
+c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.cpp(251): error C2039: 'playerName': is not a member of 'NPCs'
+  c:\users\joshu\source\repos\robotics dandd tracker\robotics dandd tracker\npcs.h(16): note: see declaration of 'NPCs'
